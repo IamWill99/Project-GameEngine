@@ -57,7 +57,9 @@ export class GameObjectForm extends LitElement {
         } else {
             console.error("Failed to add game object");
         }
-    }    
+        // Add code here to log form data to console if needed
+        console.log("Formulier ingevulde gegevens:", this.formData);
+    }
 
     public render(): ReturnType<LitElement["render"]> {
         return html`
