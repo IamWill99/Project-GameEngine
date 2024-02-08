@@ -12,3 +12,4 @@ router.post("/gameobject/add", (req: Request, res: Response) => {
     console.log(req.body);
     res.sendStatus(204);
 });
+
