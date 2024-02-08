@@ -1,12 +1,93 @@
-import { html, LitElement, TemplateResult } from "lit";
-import { customElement, } from "lit/decorators.js";
+import { html, LitElement, nothing } from "lit";
+import { customElement } from "lit/decorators.js";
+import { GameObjectFormResult } from "../shared/GameObjectFormResult";
+
+interface HTMLInputEvent extends Event {
+    target: HTMLInputElement;
+}
+
+interface HTMLSelectEvent extends Event {
+    target: HTMLSelectElement;
+}
 
 @customElement("gameobject-form")
 export class GameObjectForm extends LitElement {
+    private formData: GameObjectFormResult = {
+        alias: "",
+        name: "",
+        description: "",
+        type: "",
+        price: 0,
+        hp: 0,
+    };
 
-    public render(): TemplateResult<1> {
+    private handleAliasChange(event: HTMLInputEvent): void {
+        this.formData.alias = event.target.value;
+    }
+
+    private handleNameChange(event: HTMLInputEvent): void {
+        this.formData.name = event.target.value;
+    }
+
+    private handleDescriptionChange(event: HTMLInputEvent): void {
+        this.formData.description = event.target.value;
+    }
+
+    private handleTypeChange(event: HTMLSelectEvent): void {
+        this.formData.type = event.target.value;
+        this.requestUpdate();
+    }
+
+    private handlePriceChange(event: HTMLInputEvent): void {
+        const price: number = parseFloat(event.target.value.replace(",", "."));
+        this.formData.price = isNaN(price) || price < 0 ? 0 : price;
+    }
+
+    private handleHpChange(event: HTMLInputEvent): void {
+        const hp: number = parseInt(event.target.value);
+        this.formData.hp = isNaN(hp) || hp < 0 ? 0 : hp;
+    }
+
+    private handleAddButtonClick(): void {
+        console.log(this.formData);
+    }
+
+    // Explicit return type voor de renderfunctie
+    public render(): ReturnType<LitElement["render"]> {
         return html`
-            <p>Hello world!</p>
+            <div>
+                <label for="alias">Alias:</label>
+                <input id="alias" type="text" @input="${this.handleAliasChange}">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" type="text" @input="${this.handleNameChange}">
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <textarea id="description" @input="${this.handleDescriptionChange}"></textarea>
+            </div>
+            <div>
+                <label for="type">Type:</label>
+                <select id="type" @change="${this.handleTypeChange}">
+                    <option value="Item">Item</option>
+                    <option value="Room">Room</option>
+                    <option value="Character">Character</option>
+                </select>
+            </div>
+            ${this.formData.type === "Item" ? html`
+                <div>
+                    <label for="price">Price:</label>
+                    <input id="price" type="number" min="0" step="0.01" @input="${this.handlePriceChange}">
+                </div>
+            ` : nothing}
+            ${this.formData.type === "Character" ? html`
+                <div>
+                    <label for="hp">HP:</label>
+                    <input id="hp" type="number" min="0" step="1" @input="${this.handleHpChange}">
+                </div>
+            ` : nothing}
+            <button @click="${this.handleAddButtonClick}">Add ${this.formData.type}</button>
         `;
     }
 }
