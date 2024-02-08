@@ -1,6 +1,8 @@
-import { html, LitElement, nothing } from "lit";
+import { html, LitElement } from "lit";
+import { nothing } from "lit";
 import { customElement } from "lit/decorators.js";
 import { GameObjectFormResult } from "../shared/GameObjectFormResult";
+import { addGameObject } from "../services/routeService";
 
 interface HTMLInputEvent extends Event {
     target: HTMLInputElement;
@@ -48,11 +50,15 @@ export class GameObjectForm extends LitElement {
         this.formData.hp = isNaN(hp) || hp < 0 ? 0 : hp;
     }
 
-    private handleAddButtonClick(): void {
-        console.log(this.formData);
-    }
+    private async handleAddButtonClick(): Promise<void> {
+        const success: boolean = await addGameObject(this.formData);
+        if (success) {
+            console.log("Game object added successfully");
+        } else {
+            console.error("Failed to add game object");
+        }
+    }    
 
-    // Explicit return type voor de renderfunctie
     public render(): ReturnType<LitElement["render"]> {
         return html`
             <div>
