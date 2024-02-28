@@ -1,22 +1,20 @@
-import { GameObjectFormResult } from "../shared/GameObjectFormResult";
+import { GameState, PerformActionRequest } from "@shared/types";
+import { getJsonApi, postJsonApi } from "../helpers";
 
-export async function addGameObject(formData: GameObjectFormResult): Promise<boolean> {
+export async function getState(): Promise<GameState> {
+    return getJsonApi<GameState>("state");
+}
+
+export async function performAction(
+    actionAlias: string,
+    objectAliases?: string[]
+): Promise<GameState | undefined> {
     try {
-        const response: Response = await fetch("http://localhost:3001/gameobject/add", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
+        return postJsonApi<GameState, PerformActionRequest>("action", {
+            action: actionAlias,
+            objects: objectAliases,
         });
-
-        if (response.ok) {
-            return true;
-        } else {
-            return false;
-        }
-    } catch (error: any) {
-        console.error("Error adding game object:", error);
-        return false;
+    } catch {
+        return undefined;
     }
 }

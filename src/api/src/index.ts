@@ -2,7 +2,6 @@ import express, { Express } from "express";
 import { config } from "dotenv";
 import cors from "cors";
 import { router } from "./routes";
-
 export const app: Express = express();
 
 config();
@@ -11,8 +10,7 @@ config({ path: ".env.local", override: true });
 app.use(cors());
 app.use(express.json());
 
-// Gebruik de router voor endpoints
-app.use(router);
+app.use("/", router);
 
 const port: number = (process.env.PORT || 8080) as number;
 
