@@ -15,7 +15,7 @@ export class StartupRoom extends Room {
     }
 
     public name(): string {
-        return "Example Game";
+        return "The Nutty Putty Cave";
     }
 
     public images(): string[] {
@@ -27,7 +27,7 @@ export class StartupRoom extends Room {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["This is an example."]);
+        return new TextActionResult(["Based on a real story."]);
     }
 
     public custom(alias: string, _gameObjects?: GameObject[]): ActionResult | undefined {
