@@ -3,6 +3,7 @@ import { Room } from "./base/gameObjects/Room";
 import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware";
 import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
+import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem";
 import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
 import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
@@ -72,6 +73,9 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case ExampleCharacterAlias:
             return new ExampleCharacter();
+        
+        case GemstoneItemAlias:
+            return new GemstoneItem();
 
         //NOTE: Fall back to rooms, since those are game objects too.
         default:

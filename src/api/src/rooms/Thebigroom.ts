@@ -5,6 +5,7 @@ import { CustomAction } from "../base/actions/CustomAction";
 import { ExamineAction } from "../base/actions/ExamineAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
+import { GemstoneItem } from "../items/GemstoneItem";
 
 export const ThebigroomAlias: string = "thebigroom";
 
@@ -29,7 +30,7 @@ export class Thebigroom extends Room{
     }
 
     public objects(): GameObject[] {
-        return [this];
+        return [this, new GemstoneItem()];
     }
 
     public examine(): ActionResult | undefined {
