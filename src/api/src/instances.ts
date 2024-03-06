@@ -5,6 +5,7 @@ import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCha
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
 import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
+import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
 import { PlayerSession } from "./types";
 
 /**
@@ -49,6 +50,9 @@ export function getRoomByAlias(alias: string): Room | undefined {
 
         case ExampleRoomAlias:
             return new ExampleRoom();
+        
+        case ThebigroomAlias:
+            return new Thebigroom();
     }
 
     return undefined;
