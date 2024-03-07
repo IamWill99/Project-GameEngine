@@ -23,7 +23,7 @@ export class Thebigroom extends Room{
 
     public images(): string[] {
         return [
-            "thebigroom"
+            "Thebigroom"
         ];
     }
 
