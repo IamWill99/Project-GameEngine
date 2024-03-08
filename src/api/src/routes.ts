@@ -18,6 +18,7 @@ import {
 } from "./instances";
 import { PlayerSession } from "./types";
 import { ExampleAction, ExampleActionAlias } from "./actions/ExampleAction";
+import { PickupAction, PickupActionAlias } from "./actions/PickupAction";
 
 export const router: Router = Router();
 
@@ -84,7 +85,6 @@ router.post("/action", (req, res) => {
 
 function handleActionInRoom(room: Room, alias: string, objectAliases?: string[]): ActionResult | undefined {
     const gameObjects: GameObject[] = getGameObjectsByAliases(objectAliases);
-
     //If there are no GameObjects, execute the action on the room instead.
     if (gameObjects.length < 1) {
         gameObjects[0] = room;
@@ -118,6 +118,9 @@ function handleActionInRoom(room: Room, alias: string, objectAliases?: string[])
 
         case ExampleActionAlias:
             return ExampleAction.handle(gameObjects[0]);
+
+            case PickupActionAlias:
+                return PickupAction.handle(gameObjects[0]);
     }
 
     return CustomAction.handle(alias, gameObjects);

@@ -5,8 +5,8 @@ import { CustomAction } from "../base/actions/CustomAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
 import { getPlayerSession } from "../instances";
-/*import { ExampleRoom } from "./ExampleRoom";*/
-import { Thebigroom } from "./Thebigroom";
+import { BigslideRoom } from "./BigslideRoom";
+import { ExampleRoom } from "./ExampleRoom";
 
 export const StartupRoomAlias: string = "startup";
 
@@ -16,7 +16,7 @@ export class StartupRoom extends Room {
     }
 
     public name(): string {
-        return "The Nutty Putty Cave";
+        return "Example Game";
     }
 
     public images(): string[] {
@@ -28,12 +28,12 @@ export class StartupRoom extends Room {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Based on a real story."]);
+        return new TextActionResult(["This is an example."]);
     }
 
     public custom(alias: string, _gameObjects?: GameObject[]): ActionResult | undefined {
         if (alias === "start-game") {
-            const room: Thebigroom = new Thebigroom();
+            const room: BigslideRoom = new BigslideRoom();
 
             //Set the current room to the example room
             getPlayerSession().currentRoom = room.alias;
