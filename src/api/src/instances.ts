@@ -9,6 +9,8 @@ import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
 import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
 import { PlayerSession } from "./types";
+import { MapItemAlias, Mapitem } from "./items/MapItem";
+import { theMazeRoom, theMazeRoomAlias } from "./rooms/theMazeRoom";
 
 /**
  * Create a new player session object
@@ -55,7 +57,14 @@ export function getRoomByAlias(alias: string): Room | undefined {
         
         case ThebigroomAlias:
             return new Thebigroom();
+
+            
+        case theMazeRoomAlias:
+            return new theMazeRoom();
+    
     }
+
+    
 
     return undefined;
 }
@@ -80,6 +89,10 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case SkeletonCharacterAlias:
             return new SkeletonCharacter();
+
+            case MapItemAlias:
+                return new Mapitem();
+    
 
         //NOTE: Fall back to rooms, since those are game objects too.
         default:
