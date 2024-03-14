@@ -18,11 +18,11 @@ export class ExampleRoom extends Room implements Example {
     }
 
     public name(): string {
-        return "ED'S PUSH - LEVEL : DANGER";
+        return "Example Room";
     }
 
     public images(): string[] {
-        return ["eds"];
+        return ["example"];
     }
 
     public actions(): Action[] {
@@ -36,7 +36,7 @@ export class ExampleRoom extends Room implements Example {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Ed's Push"]);
+        return new TextActionResult(["This is an example room."]);
     }
 
     public example(): ActionResult | undefined {

@@ -2,15 +2,15 @@ import { GameObject } from "./base/gameObjects/GameObject";
 import { Room } from "./base/gameObjects/Room";
 import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware";
 import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCharacter";
-import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter";
+import { MarioCharacter, MarioCharacterAlias } from "./characters/MarioCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
-import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem";
+import { FlashLightItemAlias, FlashLightItem } from "./items/FlashLightItem";
+import { BigslideRoom, BigslideRoomAlias } from "./rooms/BigslideRoom";
 import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
-import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
 import { PlayerSession } from "./types";
 
-/**
+/**FlashLightItemAlias
  * Create a new player session object
  *
  * @returns New player session object
@@ -19,6 +19,7 @@ export function createNewPlayerSession(): PlayerSession {
     return {
         currentRoom: "startup",
         inventory: [],
+        pickedUpFlahLight: true
     };
 }
 
@@ -52,9 +53,9 @@ export function getRoomByAlias(alias: string): Room | undefined {
 
         case ExampleRoomAlias:
             return new ExampleRoom();
-        
-        case ThebigroomAlias:
-            return new Thebigroom();
+
+         case BigslideRoomAlias:
+            return new BigslideRoom();
     }
 
     return undefined;
@@ -74,12 +75,12 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case ExampleCharacterAlias:
             return new ExampleCharacter();
-        
-        case GemstoneItemAlias:
-            return new GemstoneItem();
 
-        case SkeletonCharacterAlias:
-            return new SkeletonCharacter();
+            case FlashLightItemAlias:
+                return new FlashLightItem();
+
+            case MarioCharacterAlias:
+                return new MarioCharacter();
 
         //NOTE: Fall back to rooms, since those are game objects too.
         default:
