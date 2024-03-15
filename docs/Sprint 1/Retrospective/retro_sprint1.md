@@ -1,3 +1,6 @@
+
+![Afbeelding Retro startstopcontinue](retro_sprint_1_blok_3_startstopcontinue.png)
+
 Reflectie van Eduard Ohanian op Sprint 1 - 15 maart 2024
 
 Als Eduard Ohanian kijk ik terug op Sprint 1 met een mix van tevredenheid en een sterke drang naar verdere groei als professionele ontwikkelaar. Deze sprint heeft niet alleen mijn technische vaardigheden versterkt, maar heeft ook mijn visie op mijn toekomstige loopbaan als ondernemer en ontwikkelaar verduidelijkt.
