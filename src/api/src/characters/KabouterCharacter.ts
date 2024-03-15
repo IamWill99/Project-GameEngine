@@ -1,16 +1,43 @@
 import { ActionResult } from "../base/actionResults/ActionResult";
+import { TalkActionResult } from "../base/actionResults/TalkActionResult";
+import { TextActionResult } from "../base/actionResults/TextActionResult";
+import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
+import { TalkChoiceAction } from "../base/actions/TalkAction";
 import { Character } from "../base/gameObjects/Character";
 
 export const KabouterCharacterAlias: string = "kabouter";
 
-export class KabouterCharacter extends Character {
-    public talk(choiceId?: number | undefined): ActionResult | undefined {
-        throw new Error("Method not implemented.");
-    }
-    public name(): string {
-        throw new Error("Method not implemented.");
-    }
+export class KabouterCharacter extends Character implements Examine {
+
     public constructor() {
-        super(KabouterCharacterAlias);
+        super(KabouterCharacterAlias, ExamineActionAlias);
+    }
+
+
+    public name(): string {
+        return "Kabouter";
+    }
+
+    public examine(): ActionResult | undefined {
+        return new TextActionResult(["Het is een klein kaboutertje."]);
+    }
+
+    public talk(choiceId?: number | undefined): ActionResult | undefined {
+        if(choiceId === 500) {
+            return new TextActionResult(["Kabouter: ik geef je de kaart van het doolhof als je mijn raadsel oplost."]);
+        }
+        else if(choiceId === 501){
+            return new TextActionResult(["Kabouter: In duistere diepten, daar ben ik te vinden. Een schat van kennis, ver weg van het binden. Met ogen die fonkelen, maar nooit echt zien. Raad eens mijn naam, wat ben ik misschien? Een fluistering in de wind, een echo van tijd, In het hart van de aarde, waar geheimen zich bevrijden. Zoek me niet te ver, ik ben nabij, Raad eens mijn naam, en ik ben van jou en jij van mij. Wat ben ik?"]);
+        }
+        else if(choiceId === 502){
+            return new TextActionResult(["Kabouter: Weet je zeker dat je het antwoord weet?"]);
+        }
+        else if(choiceId === 503){
+            return new TextActionResult(["Kabouter: kom maar op je met antwoord dan"]);
+        }
+
+        return new TalkActionResult(this, ["Kabouter: hallo meneer."], [
+            new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
+        ]);
     }
 }

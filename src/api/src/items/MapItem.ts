@@ -1,3 +1,4 @@
+import { Pickup, PickupMapActionAlias } from "../actions/PickupMapAction";
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
 import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
@@ -5,9 +6,9 @@ import { Item } from "../base/gameObjects/Item";
 
 export const MapItemAlias: string = "MapItem";
 
-export class Mapitem extends Item implements Examine {
+export class Mapitem extends Item implements Examine, Pickup {
    public constructor() {
-        super(MapItemAlias, ExamineActionAlias);
+        super(MapItemAlias, ExamineActionAlias, PickupMapActionAlias);
     }
 
 
@@ -17,6 +18,10 @@ export class Mapitem extends Item implements Examine {
 
     public examine(): ActionResult | undefined {
         return new TextActionResult(["Het is een kaart van het doolhof."]); 
+    }
+
+    public pickup(): ActionResult | undefined {
+        return new TextActionResult(["Je pakt de kaart op"]);
     }
 
 }
