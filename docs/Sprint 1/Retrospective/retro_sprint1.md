@@ -1,3 +1,6 @@
+**Retro sprint 1 blok 3**
+
+Nu sprint 1 is afgerond, kijken we terug op afgelopen sprint aan de hand van de startstopcontinue retro methode. Hier Kijken we naar wat we vanaf nu moeten gaan doen, waar we mee moeten stoppen en waar we mee door moeten gaan.
 
 ![Afbeelding Retro startstopcontinue](retro_sprint_1_blok_3_startstopcontinue.png)
 
