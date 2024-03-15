@@ -69,3 +69,56 @@ Om te beginnen zie ik mijzelf nog als een beginner programmeur. Ik ben trots op 
 Graag zou ik later als professional veel kennis willen hebben van meerdere programmeertalen, zodat ik software kan gebruiken om de huidige technologie vooruit te brengen. Hierbij denk ik aan AI, wat straks de wereld van ICT zal veranderen. Je hebt Sora OpenAI, wat een tekst-naar-video model is. Recent is “Devin” gemaakt, de allereerste AI software engineer die volledig automatisch werkt. Het is nog wel een lange weg te gaan voordat ik hier arriveer, dus mijn prioriteit ligt voor nu bij het halen van mijn propedeuse.
 
 
+**Retro individu Mary Anyanwu**
+
+Naam: Mary Anyanwu
+ 
+Retrospectief Verslag 
+ 
+Sprint 1 Datum: 15 maart 2024
+ 
+Doel: Het doel van dit retrospectieve verslag is om terug te kijken op Sprint 1 van het project en te reflecteren op wat er goed ging, wat er minder goed ging en wat ik heb geleerd.
+ 
+Wat ging goed: 
+ 
+Team Communicatie: Het team had goede communicatie, we hielden regelmatig stand-ups en hielden elkaar op de hoogte van de voortgang.
+ 
+Planning: De planning was goed opgesteld en ik heb me er nauwkeurig aan gehouden.
+ 
+Resultaten: Ik heb mijn doelen voor deze sprint behaald en het eindresultaat was bevredigend.
+ 
+Wat ging minder goed:
+ 
+Het was jammer dat we niet alles van onze scrum board konden afronden.
+Ik had moeite met het oppakken van een taak vanwege een codefout die ik niet kon identificeren. De visuele code-editor gaf namelijk geen foutmeldingen weer.
+ 
+Actiepunten:
+ 
+Ik zal eerder bij docenten om hulp vragen, aangezien ik te lang bezig was met een fout die ik zelf niet kon oplossen, samen met mijn medeteamgenoten. Uiteindelijk werd het probleem snel opgelost toen de docent ernaar keek.
+ 
+Ik ga mijn kennis van coderen verder verdiepen om mijn vaardigheden in OOP, TypeScript, enzovoort te verbeteren.
+ 
+Ik zal mijn teamgenoten met code-ervaring om feedback vragen over mijn code.  
+ 
+Wat heb ik geleerd van deze sprint:
+ 
+Ik heb geleerd dat het bekijken van instructievideo's van docenten op platforms zoals YouTube kan helpen bij het maken van opdrachten.
+ 
+Ik heb geleerd hoe ik concrete user stories moet opstellen, inclusief het gebruik van acceptatiecriteria, taken en de definitie van 'done'.
+ 
+Ik heb geleerd dat het efficiënter is om taken kort en bondig te houden, zodat ze sneller afgerond kunnen worden, in plaats van ze te uitgebreid te maken, waardoor er minder vooruitgang wordt geboekt.
+ 
+Wie ben ik aan het worden als professional
+
+Als professional ben ik aan het evolueren naar iemand die zich bewust is van het belang van effectieve communicatie en planning in een team. Ik streef ernaar mijn vaardigheden op het gebied van coderen te verbeteren en een grondiger begrip te krijgen van OOP, TypeScript en andere relevante technologieën. Ik zie mezelf ook groeien in mijn vermogen om constructieve feedback te vragen en vroeger om hulp te vragen wanneer dat nodig is, waardoor ik efficiënter en effectiever kan werken.
+
+
+Waaraan zie ik dat ik me aan het ontwikkelen ben:
+
+Ik zie dat ik beter word in het halen van mijn doelen op tijd. Dat betekent dat ik steeds beter kan plannen en mijn taken goed kan doen. Ook zie ik dat ik steeds handiger wordt in het vinden en oplossen van fouten in mijn code. Dit komt doordat ik meer ervaring krijg en meer leer over programmeren. Als ik fouten maak, leer ik daarvan en probeer ik het de volgende keer beter te doen. Ik vraag ook vaker om hulp en accepteer feedback om mezelf te verbeteren. Al deze dingen samen zorgen ervoor dat ik groei als professional.
+ 
+Conclusie:
+
+Tijdens Sprint 1 hebben we als team solide communicatievaardigheden en een effectieve planning laten zien, wat resulteerde in bevredigende resultaten. Echter, het niet volledig afronden van alle taken op onze scrum board en mijn persoonlijke uitdaging met het identificeren van codefouten benadrukken gebieden voor verbetering. Mijn actiepunten om vroeger om hulp te vragen en mijn coderingsvaardigheden te verdiepen, samen met het streven naar meer feedback van teamgenoten, vormen concrete stappen voorwaarts. Door het geleerde toe te passen, zie ik mezelf groeien als een professional die effectief communiceert, Zorgvuldig plannen en constant werken aan betere codering en samenwerking.
+
+
