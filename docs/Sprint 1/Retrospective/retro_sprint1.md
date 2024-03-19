@@ -121,4 +121,21 @@ Conclusie:
 
 Tijdens Sprint 1 hebben we als team solide communicatievaardigheden en een effectieve planning laten zien, wat resulteerde in bevredigende resultaten. Echter, het niet volledig afronden van alle taken op onze scrum board en mijn persoonlijke uitdaging met het identificeren van codefouten benadrukken gebieden voor verbetering. Mijn actiepunten om vroeger om hulp te vragen en mijn coderingsvaardigheden te verdiepen, samen met het streven naar meer feedback van teamgenoten, vormen concrete stappen voorwaarts. Door het geleerde toe te passen, zie ik mezelf groeien als een professional die effectief communiceert, Zorgvuldig plannen en constant werken aan betere codering en samenwerking.
 
+# Retrospective Timor Yuksel sprint 1 
+
+Ik kijk terug op Sprint 1 met een gevoel van voldoening en een sterke drang om verder te groeien als professionele ontwikkelaar. In dit verslag leg ik uit wat goed ging en minder goed ging en, ook wat ik allemaal heb geleerd tijdens sprint 1.
+
+## Wat goed ging: 
+Ons team werkte goed samen tijdens Sprint 1. We communiceerden effectief en hielden regelmatig stand-ups om de voortgang te bespreken, wat resulteerde in een naadloze samenwerking en het behalen van onze doelen. Onze planning werd strikt gevolgd, waardoor we binnen de gestelde tijdlijnen bleven en onze doelstellingen behaalden.
+## Wat minder goed ging:
+Voor mij persoonlijk was de individuele opdracht uitdagend, vooral het implementeren van de edit- en delete-functionaliteiten kostte meer moeite dan verwacht. Verder was het gebruik van de Playersession in de game engine, ook een lastig onderdeel na het bekijken van de tutorial snapte ik het nog steeds niet zo goed.
+## Actiepunten: 
+Ik wil mijn programmeervaardigheden, met name in Object-Oriented Programming (OOP) en TypeScript, verder verdiepen.
+
+## Wat ik heb geleerd van deze sprint: 
+Ik heb een beter begrip gekregen van OOP en hoe dit toe te passen in mijn code. Ik heb het belang van heldere communicatie binnen het team ervaren en hoe dit bijdraagt aan het succes van een project. Het verdelen van taken op een efficiënte manier om de productiviteit te verhogen, is ook een belangrijke les die ik heb geleerd.
+
+## Conclusie:
+Sprint 1 was goed omdat het team goed samenwerkte en de planning werd gevolgd. Ik vond sommige taken moeilijk, zoals het toevoegen van bepaalde functies en het begrijpen van een deel van de game engine. Ik wilde beter worden in programmeren en heb geleerd dat goede communicatie en het verdelen van taken belangrijk zijn voor behalen van succes. Over het algemeen was het een leerzame ervaring en ben ik vastbesloten om te blijven groeien als ontwikkelaar.
+
 
