@@ -139,3 +139,24 @@ Ik heb een beter begrip gekregen van OOP en hoe dit toe te passen in mijn code. 
 Sprint 1 was goed omdat het team goed samenwerkte en de planning werd gevolgd. Ik vond sommige taken moeilijk, zoals het toevoegen van bepaalde functies en het begrijpen van een deel van de game engine. Ik wilde beter worden in programmeren en heb geleerd dat goede communicatie en het verdelen van taken belangrijk zijn voor behalen van succes. Over het algemeen was het een leerzame ervaring en ben ik vastbesloten om te blijven groeien als ontwikkelaar.
 
 
+Retro individueel Siem:
+
+ 
+Wat ging goed:
+
+Wat goed ging in sprint 1 was de communicatie van het team. Zo bespraken we bijvoorbeeld wie wat ging doen, en stuurden we berichten naar elkaar als we ziek waren of om een andere reden niet aanwezig konden zijn bij de les. Ookk ging het samenwerken zelf erg goed. Zo hadden we bijvoorbeeld een goede taakverdeling van de user en learning stories. 
+
+
+Wat minder goed ging:
+ 
+Wat minder goed ging dat best vaak er iemand niet aanwezig was waardoor het samenwerken soms wat lastiger werd. Omdat het dan bijvoordbeeld lastiger werd om elkaar vragen te stellen en om te weten hoe ver iedereen was. Ook was de sprint planning van dit blok niet zo goed omdat we er vaak weer nieuwe dingen in toevoegde omdat we bijvoorbeeld meer eigen user stories moesten maken en deze dan weer moesten toevoegen in de planning terwijl de sprint al een tijdje bezig was. Waardoor de burndown chart er niet goed uitkwam te zien en dat we dus veel stories die we hebben ingeplant niet af hebben gekregen. 
+ 
+Wat ik geleerd heb deze sprint:
+ 
+Ik heb geleerd hoe ik een eigen room aanmaak in de game engine en hoe ik hier bijvoorbeeld een character, een item en een actie in kan toevoegen. Hierdoor kan ik dus mijn eigen level in de game aanmaken en deze ook uitbrijden met bijvoorbeeld een puzzel en verschillende dialoog opties.
+ 
+Conclusie:
+ 
+De conclusie die ik kan trekken na het eind van sprint 1 is dat het samenwerken steeds beter gaat, en dat ik veel geleerd heb over het maken van een level in de game engine. Wat we moeten verbeteren voor de volgende sprint is de sprint planning en het maken van eigen user stories, als we dit beter doen voor het begin van de sprint zodat we weten wat ons nog te wachten staat wat we moeten doen en dat we dus een goed overzicht krijgen met hoever we zijn met on werk. Ook moeten we ervoor zorgne dat iedereen zo veel mogelijk in de les aanwezig is zodat we optimaal kunnen samenwerken.
+
+
