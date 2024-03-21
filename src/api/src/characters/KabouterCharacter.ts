@@ -62,6 +62,9 @@ export class KabouterCharacter extends Character implements Examine {
 
         }
 
+        if(!playerSession.raadselGekregen) {
+            playerSession.raadselGekregen = true;
+        }
         
         return new TalkActionResult(this, ["Kabouter: hallo meneer."],
         choiceActions

@@ -3,4 +3,5 @@ export type PlayerSession = {
     inventory: string[];
     pickedUpMapItem: boolean;
     talkedToKabouter: boolean;
+    raadselGekregen: boolean;
 };

@@ -24,6 +24,7 @@ export function createNewPlayerSession(): PlayerSession {
         inventory: [],
         pickedUpMapItem: false,
         talkedToKabouter: false,
+        raadselGekregen: false,
     };
 }
 
