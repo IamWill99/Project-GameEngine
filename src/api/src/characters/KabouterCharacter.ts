@@ -57,6 +57,12 @@ export class KabouterCharacter extends Character implements Examine {
             choiceActions.push(new TalkChoiceAction(504, "look at the map."));
         }
 
+        if(!playerSession.talkedToKabouter) {
+            playerSession.talkedToKabouter = true;
+
+        }
+
+        
         return new TalkActionResult(this, ["Kabouter: hallo meneer."],
         choiceActions
            

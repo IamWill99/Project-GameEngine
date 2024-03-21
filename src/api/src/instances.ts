@@ -23,6 +23,7 @@ export function createNewPlayerSession(): PlayerSession {
         currentRoom: "startup",
         inventory: [],
         pickedUpMapItem: false,
+        talkedToKabouter: false,
     };
 }
 

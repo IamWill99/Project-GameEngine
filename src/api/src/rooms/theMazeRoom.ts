@@ -15,49 +15,59 @@ import { PlayerSession } from "../types";
 export const theMazeRoomAlias: string = "theMaze";
 
 export class theMazeRoom extends Room {
-   public constructor(){
+    public constructor() {
         super(theMazeRoomAlias);
     }
 
     public name(): string {
-       return "theMaze";
+        return "theMaze";
     }
 
     public images(): string[] {
 
-        return [
-            "maze_1", "kabouter"
-        ];  
+        const playerSession: PlayerSession = getPlayerSession();
 
+        if (playerSession.talkedToKabouter) {
+            return [
+                "kabouter"
+            ];
+        }
+
+        else {
+            return [
+                "maze_1"
+            ];
+
+        }
     }
 
     public actions(): Action[] {
-        return [new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)];
-    }
+    return [new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)];
+}
 
     public objects(): GameObject[] {
-        const playerSession: PlayerSession = getPlayerSession();
-        
-        const objects: GameObject[] = [this, ...getGameObjectsFromInventory()];
+    const playerSession: PlayerSession = getPlayerSession();
 
-        if(!playerSession.inventory.includes(MapItemAlias)) {
-            objects.push(new Mapitem());
-        }
+    const objects: GameObject[] = [this, ...getGameObjectsFromInventory()];
 
-        objects.push(new KabouterCharacter());
-
-        return objects;
+    if (!playerSession.inventory.includes(MapItemAlias)) {
+        objects.push(new Mapitem());
     }
+
+    objects.push(new KabouterCharacter());
+
+    return objects;
+}
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Het is een groot Doolhof."]);
-    }
+    return new TextActionResult(["Het is een groot Doolhof."]);
+}
 
     public custom(alias: string, _gameObjects: GameObject[] | undefined): ActionResult | undefined {
-        if(alias === "test-me"){
-            return new TextActionResult(["Je kijkt hoe groot het is"]);
+    if (alias === "test-me") {
+        return new TextActionResult(["Je kijkt hoe groot het is"]);
 
-        }
-        return undefined;
     }
+    return undefined;
+}
 }
