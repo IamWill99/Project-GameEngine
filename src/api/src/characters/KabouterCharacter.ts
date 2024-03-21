@@ -4,6 +4,9 @@ import { TextActionResult } from "../base/actionResults/TextActionResult";
 import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
 import { TalkChoiceAction } from "../base/actions/TalkAction";
 import { Character } from "../base/gameObjects/Character";
+import { getPlayerSession } from "../instances";
+import { MapItemAlias } from "../items/MapItem";
+import { PlayerSession } from "../types";
 
 export const KabouterCharacterAlias: string = "kabouter";
 
@@ -23,6 +26,9 @@ export class KabouterCharacter extends Character implements Examine {
     }
 
     public talk(choiceId?: number | undefined): ActionResult | undefined {
+        const playerSession: PlayerSession = getPlayerSession();
+
+
         if(choiceId === 500) {
             return new TextActionResult(["Kabouter: ik geef je de kaart van het doolhof als je mijn raadsel oplost."]);
         }
@@ -35,9 +41,25 @@ export class KabouterCharacter extends Character implements Examine {
         else if(choiceId === 503){
             return new TextActionResult(["Kabouter: kom maar op je met antwoord dan"]);
         }
+        else if(choiceId === 504) {
+            playerSession.inventory = [];
+            
+            return new TextActionResult(["You take a look at the map."]);
+        }
 
-        return new TalkActionResult(this, ["Kabouter: hallo meneer."], [
+        const choiceActions: TalkChoiceAction[] = [
             new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
-        ]);
+        ];
+
+        
+
+        if(playerSession.inventory.includes(MapItemAlias)) {
+            choiceActions.push(new TalkChoiceAction(504, "look at the map."));
+        }
+
+        return new TalkActionResult(this, ["Kabouter: hallo meneer."],
+        choiceActions
+           
+        );
     }
 }

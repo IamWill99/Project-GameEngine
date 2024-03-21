@@ -8,7 +8,9 @@ import { TalkAction } from "../base/actions/TalkAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
 import { KabouterCharacter } from "../characters/KabouterCharacter";
-import { Mapitem } from "../items/MapItem";
+import { getGameObjectsFromInventory, getPlayerSession } from "../instances";
+import { MapItemAlias, Mapitem } from "../items/MapItem";
+import { PlayerSession } from "../types";
 
 export const theMazeRoomAlias: string = "theMaze";
 
@@ -24,8 +26,9 @@ export class theMazeRoom extends Room {
     public images(): string[] {
 
         return [
-            "theMaze"
-        ];
+            "maze_1", "kabouter"
+        ];  
+
     }
 
     public actions(): Action[] {
@@ -33,7 +36,17 @@ export class theMazeRoom extends Room {
     }
 
     public objects(): GameObject[] {
-        return [this, new Mapitem(), new KabouterCharacter()];
+        const playerSession: PlayerSession = getPlayerSession();
+        
+        const objects: GameObject[] = [this, ...getGameObjectsFromInventory()];
+
+        if(!playerSession.inventory.includes(MapItemAlias)) {
+            objects.push(new Mapitem());
+        }
+
+        objects.push(new KabouterCharacter());
+
+        return objects;
     }
 
     public examine(): ActionResult | undefined {
