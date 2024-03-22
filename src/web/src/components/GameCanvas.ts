@@ -3,87 +3,60 @@ import { LitElement, TemplateResult, css, html, nothing } from "lit";
 import { customElement } from "lit/decorators.js";
 import { getState, performAction } from "../services/routeService";
 
+
 @customElement("game-canvas")
 export class GameCanvas extends LitElement {
     public static styles = css`
-        .game {
-            height: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto 1fr auto;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+        :host {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .left-panel {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .right-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .title {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-grow: 1;
-            position: relative;
-            margin-top: 10px;
-        }
-
-        .header img {
-            width: 60%; /* Maakt de afbeelding breder */
-            height: 250px; /* Maakt de afbeelding 150 pixels lang */
-            image-rendering: pixelated;
-        }
-
-        .header img:nth-child(n + 2) {
-            position: absolute;
+            font-size: 30px; /* Verhoog de grootte van de titeltekst */
+            margin-bottom: 20px;
         }
 
         .content {
-            flex-grow: 1;
-            overflow: auto;
-            margin-top: 10px;
-            padding: 0 10px;
-        }
-
-        .content p {
-            margin: 0 0 10px 0;
-        }
-
-        .content p:last-of-type {
-            margin: 0;
+            font-size: 18px; /* Verhoog de grootte van de inhoudstekst */
+            line-height: 1.5;
         }
 
         .footer {
-            border-radius: 10px 10px 0 0;
-            background-color: #52478b;
-            border: 1px solid #332c57;
-            margin-top: 10px;
-            display: flex;
-            height: 105px;
+            margin-top: auto;
         }
 
-        .footer .buttons {
-            display: flex;
-            flex-direction: column;
-            overflow: auto;
-            padding: 10px 10px 0 10px;
-        }
-
-        .footer .button {
-            background-color: #7f6ed7;
-            border: 1px solid #332c57;
-            padding: 5px 10px;
-            margin: 0 0 10px 10px;
-            text-transform: uppercase;
-            cursor: pointer;
+        .button {
             display: inline-block;
-            user-select: none;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
 
-        .footer .button.active,
-        .footer .button:hover {
-            background-color: #332c57;
+        .button:hover {
+            background-color: #555;
         }
     `;
 

@@ -2,15 +2,22 @@ import { GameObject } from "./base/gameObjects/GameObject";
 import { Room } from "./base/gameObjects/Room";
 import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware";
 import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCharacter";
-import { MarioCharacter, MarioCharacterAlias } from "./characters/MarioCharacter";
+import { JohnCharacter, JohnCharacterAlias } from "./characters/JohnCharacter";
+import { BoomCharacter, BoomCharacterAlias } from "./characters/BoomCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
 import { FlashLightItemAlias, FlashLightItem } from "./items/FlashLightItem";
+import { DeurklinkItem, DeurklinkItemAlias } from "./items/DeurklinkItem";
+import { RopeItemAlias, RopeItem } from "./items/RopeItem";
+import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem"; // Import GemstoneItem and GemstoneItemAlias
+import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter"; // Import SkeletonCharacter and SkeletonCharacterAlias
 import { BigslideRoom, BigslideRoomAlias } from "./rooms/BigslideRoom";
-import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
+import { CaveEntrance, CaveEntranceAlias } from "./rooms/CaveEntrance";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
+import { BigRoom, BigRoomAlias } from "./rooms/BigRoom";
+import { EdsPush, EdsPushAlias } from "./rooms/EdsPush";
 import { PlayerSession } from "./types";
 
-/**FlashLightItemAlias
+/**
  * Create a new player session object
  *
  * @returns New player session object
@@ -19,7 +26,12 @@ export function createNewPlayerSession(): PlayerSession {
     return {
         currentRoom: "startup",
         inventory: [],
-        pickedUpFlahLight: true
+        pickedUpGemstone: true,
+        pickedUpDeurklink: false,
+        talkedToBoom: false,
+        pickedUpFlashLight: true,
+        pickedUpRope: true,
+        talkedToJohn: false,
     };
 }
 
@@ -51,11 +63,17 @@ export function getRoomByAlias(alias: string): Room | undefined {
         case StartupRoomAlias:
             return new StartupRoom();
 
-        case ExampleRoomAlias:
-            return new ExampleRoom();
-
-         case BigslideRoomAlias:
+        case BigslideRoomAlias:
             return new BigslideRoom();
+
+        case CaveEntranceAlias:
+            return new CaveEntrance();
+            
+        case BigRoomAlias:
+            return new BigRoom();
+
+        case EdsPushAlias:
+            return new EdsPush();
     }
 
     return undefined;
@@ -75,14 +93,29 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case ExampleCharacterAlias:
             return new ExampleCharacter();
+        
+        case DeurklinkItemAlias:
+            return new DeurklinkItem();
 
-            case FlashLightItemAlias:
-                return new FlashLightItem();
+        case BoomCharacterAlias:
+            return new BoomCharacter();
 
-            case MarioCharacterAlias:
-                return new MarioCharacter();
+        case FlashLightItemAlias:
+            return new FlashLightItem();
 
-        //NOTE: Fall back to rooms, since those are game objects too.
+        case RopeItemAlias:
+            return new RopeItem();
+
+        case JohnCharacterAlias:
+            return new JohnCharacter();
+
+        case GemstoneItemAlias: // Add case for GemstoneItemAlias
+            return new GemstoneItem();
+
+        case SkeletonCharacterAlias: // Add case for SkeletonCharacterAlias
+            return new SkeletonCharacter();
+            
+        // Fall back to rooms, since those are game objects too.
         default:
             return getRoomByAlias(alias);
     }

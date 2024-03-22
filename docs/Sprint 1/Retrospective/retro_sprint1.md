@@ -139,7 +139,7 @@ Ik heb een beter begrip gekregen van OOP en hoe dit toe te passen in mijn code. 
 Sprint 1 was goed omdat het team goed samenwerkte en de planning werd gevolgd. Ik vond sommige taken moeilijk, zoals het toevoegen van bepaalde functies en het begrijpen van een deel van de game engine. Ik wilde beter worden in programmeren en heb geleerd dat goede communicatie en het verdelen van taken belangrijk zijn voor behalen van succes. Over het algemeen was het een leerzame ervaring en ben ik vastbesloten om te blijven groeien als ontwikkelaar.
 
 
-Retro individueel Siem:
+**Retro individueel Siem:**
 
  
 Wat ging goed:
