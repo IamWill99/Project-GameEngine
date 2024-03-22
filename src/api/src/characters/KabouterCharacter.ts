@@ -46,9 +46,20 @@ export class KabouterCharacter extends Character implements Examine {
             
             return new TextActionResult(["You take a look at the map."]);
         }
+        else if(choiceId === 505) {
+            return new TextActionResult(["boeboeboe"]);
+        }
+
+       // else if(!playerSession.raadselGekregen) {
+        //    playerSession.raadselGekregen = true;
+    
+        //    return new TextActionResult(["raaadsel"]);
+      //  }        
 
         const choiceActions: TalkChoiceAction[] = [
-            new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
+            new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), 
+        
+            //new TalkChoiceAction(501, "Vraag om het raadsel."), //new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
         ];
 
         
@@ -62,8 +73,8 @@ export class KabouterCharacter extends Character implements Examine {
 
         }
 
-        if(!playerSession.raadselGekregen) {
-            playerSession.raadselGekregen = true;
+        if(choiceId === 500 = true) {
+            choiceActions.push(new TalkChoiceAction(505, "geef raadsel"));
         }
         
         return new TalkActionResult(this, ["Kabouter: hallo meneer."],
