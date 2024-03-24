@@ -1,5 +1,9 @@
 export type PlayerSession = {
+    [x: string]: any;
+    pickedUpDeurklink: any;
     currentRoom: string;
     inventory: string[];
-    pickedUpFlahLight:boolean;
+    pickedUpFlashLight:boolean;
+    pickedUpRope:boolean;
+    talkedToJohn:boolean;
 };
