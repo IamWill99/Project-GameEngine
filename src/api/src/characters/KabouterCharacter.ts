@@ -1,6 +1,7 @@
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TalkActionResult } from "../base/actionResults/TalkActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
+//import { CustomAction } from "../base/actions/CustomAction";
 import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
 import { TalkChoiceAction } from "../base/actions/TalkAction";
 import { Character } from "../base/gameObjects/Character";
@@ -47,14 +48,15 @@ export class KabouterCharacter extends Character implements Examine {
             return new TextActionResult(["You take a look at the map."]);
         }
         else if(choiceId === 505) {
-            return new TextActionResult(["boeboeboe"]);
+            return new TextActionResult(["raadsell"]);
         }
+         
 
-       // else if(!playerSession.raadselGekregen) {
-        //    playerSession.raadselGekregen = true;
+        else if(!playerSession.raadselGekregen) {
+            playerSession.raadselGekregen = true;
     
-        //    return new TextActionResult(["raaadsel"]);
-      //  }        
+           //return new CustomAction("raadsel", "hetraadsel", false);
+        }        
 
         const choiceActions: TalkChoiceAction[] = [
             new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), 
@@ -73,8 +75,8 @@ export class KabouterCharacter extends Character implements Examine {
 
         }
 
-        if(choiceId === 500 = true) {
-            choiceActions.push(new TalkChoiceAction(505, "geef raadsel"));
+        if(!playerSession.raadselGekregen) {
+            playerSession.raadselGekregen = true;
         }
         
         return new TalkActionResult(this, ["Kabouter: hallo meneer."],
