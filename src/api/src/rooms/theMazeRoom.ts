@@ -46,9 +46,24 @@ export class theMazeRoom extends Room {
   
 
       //  if (playerSession.raadselGekregen) {
- {
-    return [new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)];
+ //{
+  //  return [new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)];
+    //    }
+        const playerSession: PlayerSession = getPlayerSession();
+
+        if (playerSession.raadselGekregen) {
+            return [
+                new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)
+            ];
         }
+
+        else {
+            return [
+                new ExamineAction(), new TalkAction(), new CustomAction("test-me", "Test me", false)
+            ];
+
+        }
+
 
 }
 
