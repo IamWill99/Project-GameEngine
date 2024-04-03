@@ -37,10 +37,10 @@ export class KabouterCharacter extends Character implements Examine {
             return new TextActionResult(["Kabouter: In duistere diepten, daar ben ik te vinden. Een schat van kennis, ver weg van het binden. Met ogen die fonkelen, maar nooit echt zien. Raad eens mijn naam, wat ben ik misschien? Een fluistering in de wind, een echo van tijd, In het hart van de aarde, waar geheimen zich bevrijden. Zoek me niet te ver, ik ben nabij, Raad eens mijn naam, en ik ben van jou en jij van mij. Wat ben ik?"]);
         }
         else if(choiceId === 502){
-            return new TextActionResult(["Kabouter: Weet je zeker dat je het antwoord weet?"]);
+            return new TextActionResult(["Kabouter: Dat is goed!"]);
         }
         else if(choiceId === 503){
-            return new TextActionResult(["Kabouter: kom maar op je met antwoord dan"]);
+            return new TextActionResult(["Kabouter: Dat is fout"]);
         }
         else if(choiceId === 504) {
             playerSession.inventory = [];
@@ -61,7 +61,9 @@ export class KabouterCharacter extends Character implements Examine {
         const choiceActions: TalkChoiceAction[] = [
             new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), 
         
-            new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
+            new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "een geheim?"), new TalkChoiceAction(503, "een geur?")
+
+        
         ];
 
         
