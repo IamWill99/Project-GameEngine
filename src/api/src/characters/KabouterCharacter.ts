@@ -1,7 +1,7 @@
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TalkActionResult } from "../base/actionResults/TalkActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
-//import { CustomAction } from "../base/actions/CustomAction";
+import { CustomAction } from "../base/actions/CustomAction";
 import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
 import { TalkChoiceAction } from "../base/actions/TalkAction";
 import { Character } from "../base/gameObjects/Character";
@@ -55,13 +55,13 @@ export class KabouterCharacter extends Character implements Examine {
         else if(!playerSession.raadselGekregen) {
             playerSession.raadselGekregen = true;
     
-           //return new CustomAction("raadsel", "hetraadsel", false);
+           return new CustomAction("raadsel", "hetraadsel", false);
         }        
 
         const choiceActions: TalkChoiceAction[] = [
             new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), 
         
-            //new TalkChoiceAction(501, "Vraag om het raadsel."), //new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
+            new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "geef een antwoord."), new TalkChoiceAction(503, "Ja ik weet het zeker!")
         ];
 
         

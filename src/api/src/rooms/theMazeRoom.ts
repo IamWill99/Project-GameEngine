@@ -43,17 +43,10 @@ export class theMazeRoom extends Room {
 
     public actions(): Action[] {
 
-        const playerSession: PlayerSession = getPlayerSession();
+  
 
-        if (playerSession.raadselGekregen) {
-            return [
-                 new TalkAction()
-           ];
-        }
-
-        
-
-        else {
+      //  if (playerSession.raadselGekregen) {
+ {
     return [new ExamineAction(), new TalkAction(), new PickupMapAction(), new CustomAction("test-me", "Test me", false)];
         }
 
