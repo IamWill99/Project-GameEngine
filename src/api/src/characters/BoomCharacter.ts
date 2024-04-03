@@ -18,11 +18,11 @@ export class BoomCharacter extends Character implements Examine{
     }
 
     public name(): string {
-        return "Pratende boom";
+        return "Talking Tree";
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Vreemd genoeg heeft de boom een gezicht. Zou het kunnen praten?"]);
+        return new TextActionResult(["Strangely, the tree has a face. Could it possibly talk?"]);
     }
 
     
@@ -31,18 +31,18 @@ export class BoomCharacter extends Character implements Examine{
         const playerSession: PlayerSession = getPlayerSession();
 
         if(choiceId === 20){
-            return new TextActionResult(["De boom wordt boos."]);
+            return new TextActionResult(["The tree becomes angry."]);
         }
         else if(choiceId === 21){
-            return new TextActionResult(["\"Voorbij de schaduwen van de grot, rusten verborgen geheimen. Een licht is jouw gids door de duisternis, een baken van hoop in de diepten van de nacht.\" Zegt de boom."]);
+            return new TextActionResult(["\"Beyond the shadows of the cave, lie hidden secrets. A light is your guide through the darkness, a beacon of hope in the depths of the night\" says the tree."]);
         }
         else if(choiceId === 22){
             playerSession.inventory = [];
             
-            return new TextActionResult(["Je geeft de deurklink aan de boom. Het eet de deurklink op. \"Mmmmmm.\""]);
+            return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\""]);
         }
         
-        const choiceActions : TalkChoiceAction[] = [new TalkChoiceAction(20, "Beledig de boom"), new TalkChoiceAction(21, "Vraag om advies")
+        const choiceActions : TalkChoiceAction[] = [new TalkChoiceAction(20, "Insult the tree"), new TalkChoiceAction(21, "Ask for advice")
     ];
 
         if(!playerSession.talkedToBoom){
@@ -51,11 +51,11 @@ export class BoomCharacter extends Character implements Examine{
 
 
         if(playerSession.inventory.includes(DeurklinkItemAlias)) {
-            choiceActions.push(new TalkChoiceAction(22, "Geef de deurklink aan de boom"));
+            choiceActions.push(new TalkChoiceAction(22, "Give the doorknob to the tree"));
 
         }
 
-        return new TalkActionResult(this, ["\"betreed de grot niet!\" Fluistert de oude boom op mysterieuze toon. \"Diepe schaduwen huizen binnenin, hun geheimen rusten in het duister. Keer om, reiziger, voor het pad dat je nu bewandelt, draagt de last van onbekende gevaren\"."],
+        return new TalkActionResult(this, ["\"Do not enter the cave!\" whispers the old tree in a mysterious tone. \"Deep shadows dwell within, their secrets resting in the darkness. Turn back, traveler, for the path you tread now bears the burden of unknown dangers.\"."],
         choiceActions
         );
     }

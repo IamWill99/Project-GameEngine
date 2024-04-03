@@ -48,7 +48,7 @@ export class CaveEntrance extends Room{
             new ExamineAction(),
             new PickupAction(),
             new TalkAction(),
-            new CustomAction("go-to-bigroom", "OPEN DOOR", false) // Add custom action to go to BigRoom
+            new CustomAction("go-to-bigroom", "Open Door", false) // Add custom action to go to BigRoom
         ];
     }
 
@@ -66,12 +66,12 @@ export class CaveEntrance extends Room{
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Je loopt verder in het duistere bos, waar aan het einde van het pad een mysterieuze deur te zien is. Een stille spanning vult de lucht."]);
+        return new TextActionResult(["You walk into the dark forest, at the end of the path, a mysterious door comes into view. A silent tension fills the air."]);
     }
 
     public custom(alias: string, _gameObjects: GameObject[] | undefined): ActionResult | undefined {
         if(alias === "test me"){
-            return new TextActionResult(["Je probeert de deur open te duwen. De magische deur blijft gesloten, ongevoelig voor je pogingen."]);
+            return new TextActionResult(["You try to push the door open. The magical door remains closed, unaffected by your attempts."]);
         } else if (alias === "go-to-bigroom") { // Check if the button for BigRoom is clicked
             // Create a new instance of BigRoom
             const bigRoom: BigRoom = new BigRoom();
