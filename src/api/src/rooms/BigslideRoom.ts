@@ -61,10 +61,9 @@ export class BigslideRoom extends Room {
 
     public examine(): ActionResult | undefined {
         return new TextActionResult([
-            "In darkness deep, a tale unfolds, Josh and Jones, their courage bold.",
-            "Within the Slide's winding way, Echoes sound, shadows sway.",
-            "One seeks light, the other a rope, Choices critical offering hope.",
-            "In shadows deep, fears they face, Outcome beyond, this cave's embrace."
+            "In the depths of the cave, a spirit's voice speaks soft and brave, 'I am John Jones,' it echoes clear",
+             "'I'll guide you through the dark and near.", "Do you trust, or fear the sound? Does paranoia's grip abound?",
+             "In shadows deep a choice awaits, the outcome hidden by darkness fates."
         ]);
     }
 
