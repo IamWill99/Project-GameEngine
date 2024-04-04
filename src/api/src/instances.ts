@@ -2,21 +2,17 @@ import { GameObject } from "./base/gameObjects/GameObject";
 import { Room } from "./base/gameObjects/Room";
 import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware";
 import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCharacter";
-import { JohnCharacter, JohnCharacterAlias } from "./characters/JohnCharacter";
-import { BoomCharacter, BoomCharacterAlias } from "./characters/BoomCharacter";
+import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
-import { FlashLightItemAlias, FlashLightItem } from "./items/FlashLightItem";
-import { DeurklinkItem, DeurklinkItemAlias } from "./items/DeurklinkItem";
-import { RopeItemAlias, RopeItem } from "./items/RopeItem";
-import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem"; // Import GemstoneItem and GemstoneItemAlias
-import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter"; // Import SkeletonCharacter and SkeletonCharacterAlias
-import { BigslideRoom, BigslideRoomAlias } from "./rooms/BigslideRoom";
-import { CaveEntrance, CaveEntranceAlias } from "./rooms/CaveEntrance";
+import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem";
+import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
-import { BigRoom, BigRoomAlias } from "./rooms/BigRoom";
-import { EdsPush, EdsPushAlias } from "./rooms/EdsPush";
+import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
 import { PlayerSession } from "./types";
 import { StoneCharacter, StoneCharacterAlias } from "./characters/StoneCharacter";
+import { MapItemAlias, Mapitem } from "./items/MapItem";
+import { theMazeRoom, theMazeRoomAlias } from "./rooms/theMazeRoom";
+import { KabouterCharacter, KabouterCharacterAlias } from "./characters/KabouterCharacter";
 
 /**
  * Create a new player session object
@@ -35,6 +31,11 @@ export function createNewPlayerSession(): PlayerSession {
         pickedUpRope: true,
         talkedToJohn: false,
         examineStone: false,
+        pickedUpMapItem: false,
+        talkedToKabouter: false,
+        raadselGekregen: false,
+        geheimGedrukt: false,
+
     };
 }
 
@@ -71,12 +72,15 @@ export function getRoomByAlias(alias: string): Room | undefined {
 
         case CaveEntranceAlias:
             return new CaveEntrance();
-            
+
         case BigRoomAlias:
             return new BigRoom();
 
         case EdsPushAlias:
             return new EdsPush();
+
+        case theMazeRoomAlias:
+            return new theMazeRoom();
     }
 
     return undefined;
@@ -104,7 +108,7 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
             return new BoomCharacter();
 
         case StoneCharacterAlias:
-            return new StoneCharacter();    
+            return new StoneCharacter();
 
         case FlashLightItemAlias:
             return new FlashLightItem();
@@ -118,10 +122,17 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
         case GemstoneItemAlias: // Add case for GemstoneItemAlias
             return new GemstoneItem();
 
-        case SkeletonCharacterAlias: // Add case for SkeletonCharacterAlias
+        case SkeletonCharacterAlias:
             return new SkeletonCharacter();
-            
-        // Fall back to rooms, since those are game objects too.
+
+        case MapItemAlias:
+                return new Mapitem();
+
+        case KabouterCharacterAlias:
+            return new KabouterCharacter();
+
+
+        //NOTE: Fall back to rooms, since those are game objects too.
         default:
             return getRoomByAlias(alias);
     }

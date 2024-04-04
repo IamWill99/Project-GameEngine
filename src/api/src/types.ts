@@ -8,4 +8,8 @@ export type PlayerSession = {
     talkedToJohn:boolean;
     examineCave:boolean;
     examineStone:boolean;
+    pickedUpMapItem: boolean;
+    talkedToKabouter: boolean;
+    raadselGekregen: boolean;
+    geheimGedrukt: boolean;
 };

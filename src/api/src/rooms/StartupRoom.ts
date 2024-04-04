@@ -27,7 +27,7 @@ export class StartupRoom extends Room {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["John Edward Jones, a modern adventurer with a passion for cave diving, stumbled upon this ancient legend during his travels. Fascinated by the idea of a forgotten treasure and driven by his fearlessness, he decides to take on the challenge and unravel the secrets of Nutty Putty Cave.\""]);
+        return new TextActionResult(["Based on a real story."]);
     }
 
     public custom(alias: string, _gameObjects?: GameObject[]): ActionResult | undefined {
