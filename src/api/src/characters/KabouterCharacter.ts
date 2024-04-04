@@ -1,4 +1,5 @@
 //import { PickupMapAction } from "../actions/PickupMapAction";
+import { PickupMapAction } from "../actions/PickupMapAction";
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TalkActionResult } from "../base/actionResults/TalkActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
@@ -38,7 +39,7 @@ export class KabouterCharacter extends Character implements Examine {
             return new TextActionResult(["Kabouter: In duistere diepten, daar ben ik te vinden. Een schat van kennis, ver weg van het binden. Met ogen die fonkelen, maar nooit echt zien. Raad eens mijn naam, wat ben ik misschien? Een fluistering in de wind, een echo van tijd, In het hart van de aarde, waar geheimen zich bevrijden. Zoek me niet te ver, ik ben nabij, Raad eens mijn naam, en ik ben van jou en jij van mij. Wat ben ik?"]);
         }
         else if(choiceId === 502){
-            return new TextActionResult(["Kabouter: Dat is goed!"]);
+            return new TextActionResult(["Kabouter: Dat is goed! Pak de kaart op en ga verder."]) ;
         }
         else if(choiceId === 503){
             return new TextActionResult(["Kabouter: Dat is fout"]);
