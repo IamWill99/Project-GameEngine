@@ -13,4 +13,5 @@ export type PlayerSession = {
     raadselGekregen: boolean;
     geheimGedrukt: boolean;
     mapGepakt: boolean;
+    giveDoorknob: boolean;
 };

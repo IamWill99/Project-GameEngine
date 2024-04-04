@@ -1,6 +1,6 @@
 import { GameObject } from "./base/gameObjects/GameObject";
 import { Room } from "./base/gameObjects/Room";
-import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware";
+import { getPlayerSessionFromContext, resetPlayerSessionInContext } from "./base/playerSessionMiddleware"; // Import resetGame function
 import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCharacter";
 import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
@@ -38,12 +38,12 @@ export function createNewPlayerSession(): PlayerSession {
         pickedUpRope: true,
         talkedToJohn: false,
         examineStone: false,
+        giveDoorknob: false,
         pickedUpMapItem: false,
         talkedToKabouter: false,
         raadselGekregen: false,
         geheimGedrukt: false,
         mapGepakt: false,
-
     };
 }
 
@@ -108,7 +108,7 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case ExampleCharacterAlias:
             return new ExampleCharacter();
-        
+
         case DeurklinkItemAlias:
             return new DeurklinkItem();
 
@@ -134,7 +134,7 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
             return new SkeletonCharacter();
 
         case MapItemAlias:
-                return new Mapitem();
+            return new Mapitem();
 
         case KabouterCharacterAlias:
             return new KabouterCharacter();

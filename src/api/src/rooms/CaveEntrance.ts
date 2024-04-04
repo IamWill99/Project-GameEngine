@@ -46,12 +46,25 @@ export class CaveEntrance extends Room{
 
 
     public actions(): Action[] {
+        const playerSession: PlayerSession = getPlayerSession();
+
+        if (playerSession.giveDoorknob) {
+            return [
+                new ExamineAction(),
+                new PickupAction(),
+                new TalkAction(),
+                new CustomAction("go-to-bigroom", "Enter Cave", false) // Add custom action to go to BigRoom
+            ];
+        }
+        
+        else {
         return [
             new ExamineAction(),
             new PickupAction(),
             new TalkAction(),
-            new CustomAction("go-to-bigroom", "Enter Cave", false) // Add custom action to go to BigRoom
+            
         ];
+        }
     }
 
     public objects(): GameObject[] {

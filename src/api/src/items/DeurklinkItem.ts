@@ -20,7 +20,17 @@ export class DeurklinkItem extends Item implements Examine, Pickup{
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["It's a golden doorknob. Where could this be used?"]);
+        const playerSession: PlayerSession = getPlayerSession();
+
+        
+        if (playerSession.giveDoorknob){
+            return new TextActionResult(["The tree ate the doorknob. You'll probably never see it again."]);
+        }
+
+        else { 
+            return new TextActionResult(["It's a golden doorknob. Where could this be used?"]);}
+
+
     }
 
     public pickup(): ActionResult | undefined {
