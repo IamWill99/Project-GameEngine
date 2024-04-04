@@ -29,7 +29,7 @@ export class StoneCharacter extends Character implements Examine, Pickup {
             return new TextActionResult(["Just an ordinary rock."]);
         }
 
-        else if (playerSession.moveRoots){
+        else if (playerSession.correctAnswerRiddle){
             return new TextActionResult(["You see something glistening behind the stone."]);
         }
     

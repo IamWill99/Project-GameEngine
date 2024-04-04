@@ -15,4 +15,6 @@ export type PlayerSession = {
     mapGepakt: boolean;
     giveDoorknob: boolean;
     moveRoots: boolean;
+    askRiddle: boolean;
+    correctAnswerRiddle: boolean;
 };

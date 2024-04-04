@@ -40,6 +40,8 @@ export function createNewPlayerSession(): PlayerSession {
         examineStone: false,
         giveDoorknob: false,
         moveRoots: false,
+        askRiddle: false,
+        correctAnswerRiddle: false,
         pickedUpMapItem: false,
         talkedToKabouter: false,
         raadselGekregen: false,

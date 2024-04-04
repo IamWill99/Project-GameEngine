@@ -1,3 +1,4 @@
+import { Pickup, PickupActionAlias } from "../actions/PickupAction";
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TalkActionResult } from "../base/actionResults/TalkActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
@@ -12,10 +13,10 @@ import { PlayerSession } from "../types";
 
 export const BoomCharacterAlias: string = "pratendeBoom";
 
-export class BoomCharacter extends Character implements Examine{
+export class BoomCharacter extends Character implements Examine, Pickup{
 
     public constructor(){
-        super(BoomCharacterAlias, ExamineActionAlias);
+        super(BoomCharacterAlias, ExamineActionAlias, PickupActionAlias);
     }
 
     public name(): string {
@@ -39,7 +40,7 @@ export class BoomCharacter extends Character implements Examine{
                 playerSession.moveRoots = true;
             }
 
-            return new TextActionResult(["\"Beyond the shadows of the cave, lie hidden secrets. A light is your guide through the darkness, a beacon of hope in the depths of the night\" says the tree."]);
+            return new TextActionResult(["\"Answer some riddles for me and i'll help you enter the cave!\" says the tree."]);
         }
         else if(choiceId === 22){
             playerSession.inventory = [];
@@ -50,8 +51,33 @@ export class BoomCharacter extends Character implements Examine{
 
             return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\" You hear something clicking in the distance."]);
         }
-        
-        const choiceActions : TalkChoiceAction[] = [new TalkChoiceAction(20, "Insult the tree"), new TalkChoiceAction(21, "Ask for advice")
+        else if(choiceId === 23){
+
+            if(!playerSession.askRiddle){
+                playerSession.askRiddle = true;
+            }
+
+            return new TextActionResult(["I'm small and brown, with a fluffy tail, Among the trees, I often trail. I gather nuts and seeds with glee, In the forest, I'm as busy as can be. What am I?"]);
+        }
+        else if(choiceId === 24) {
+            return new TextActionResult(["A deer? Wrong!"]);
+        }
+        else if(choiceId === 25) {
+            return new TextActionResult(["A rabbit? Wrong!"]);
+        }
+        else if(choiceId === 26) {
+            if(!playerSession.correctAnswerRiddle){
+                playerSession.correctAnswerRiddle = true;
+            }
+
+            return new TextActionResult(["A squirrel? You are correct! You hear some roots moving in the distance."]);
+            
+        }
+        else if(choiceId === 27) {
+            return new TextActionResult(["A fox? Wrong!"]);
+        }        
+
+        const choiceActions : TalkChoiceAction[] = [new TalkChoiceAction(20, "Insult the tree"), new TalkChoiceAction(21, "Ask for help")
     ];
 
         if(!playerSession.talkedToBoom){
@@ -59,14 +85,26 @@ export class BoomCharacter extends Character implements Examine{
         }
 
         
+        if(playerSession.moveRoots) {
+            choiceActions.push(new TalkChoiceAction(23, "Riddle"));
+        }
 
+        if(playerSession.askRiddle) {
+            choiceActions.push(new TalkChoiceAction(24, "Riddle: A deer?"));
+            choiceActions.push(new TalkChoiceAction(25, "Riddle: A rabbit?"));
+            choiceActions.push(new TalkChoiceAction(26, "Riddle: A squirrel?"));
+            choiceActions.push(new TalkChoiceAction(27, "Riddle: A fox?"));
+
+        }
+
+  
 
         if(playerSession.inventory.includes(DeurklinkItemAlias)) {
             choiceActions.push(new TalkChoiceAction(22, "Give the doorknob to the tree"));
 
         }
 
-        return new TalkActionResult(this, ["\"Do not enter the cave!\" whispers the old tree in a mysterious tone. \"Deep shadows dwell within, their secrets resting in the darkness. Turn back, traveler, for the path you tread now bears the burden of unknown dangers.\"."],
+        return new TalkActionResult(this, ["\"So Hungry...\" whispers the old tree to itself. \"If you give me something to eat, i'll help you with anything...\"."],
         choiceActions
         );
     }
@@ -78,8 +116,12 @@ export class BoomCharacter extends Character implements Examine{
         const startupRoom: StartupRoom = new StartupRoom();
         getPlayerSession().currentRoom = startupRoom.alias;
         // Return a TextActionResult with the game over message
-        return new TextActionResult(["The tree became furious and ate you... Game over!"]);
+        return new TextActionResult(["The tree became furious and used the surrounding tree roots to force you into it's mouth. Game over!"]);
     }
 
+
+    public pickup(): ActionResult | undefined {
+        return new TextActionResult(["You walk up to the tree knowing fully well you can't pick up the tree. You hug the tree with your arms to lift it up. The tree hugs you back."]);
+    }
 
 }

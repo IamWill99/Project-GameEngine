@@ -71,7 +71,7 @@ export class CaveEntrance extends Room{
         const playerSession: PlayerSession = getPlayerSession();
         const objects: GameObject[] = [this];
 
-        if(playerSession.talkedToBoom && playerSession.examineStone) {
+        if(playerSession.correctAnswerRiddle && playerSession.examineStone) {
             objects.push(new DeurklinkItem());
         }
 
