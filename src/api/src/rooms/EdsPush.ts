@@ -8,11 +8,12 @@ import { PickupAction } from "../actions/PickupAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
 import { JohnCharacter } from "../characters/JohnCharacter";
-import { getPlayerSession } from "../instances";
+import { getPlayerSession, resetPlayerSession } from "../instances"; // Import resetPlayerSession instead of resetGame
 import { FlashLightItem, FlashLightItemAlias } from "../items/FlashLightItem";
 import { RopeItem, RopeItemAlias } from "../items/RopeItem";
 import { PlayerSession } from "../types";
 import { BigslideRoom } from "./BigslideRoom";
+import { StartupRoom } from "./StartupRoom"; // Import StartupRoom
 
 export const EdsPushAlias: string = "EdsPush";
 
@@ -27,28 +28,64 @@ export class EdsPush extends Room {
     }
 
     public images(): string[] {
-        return ["eds"]; // Use the same images as BigslideRoom for now, you can update this later
+        const playerSession: PlayerSession = getPlayerSession();
+
+        // Check if the player has given the rope to John
+        if (playerSession.gaveRopeToJohn) {
+            // If the rope is given to John, change the room picture to "edspush1"
+            return ["edspush1"];
+        } else {
+            // If the rope is not given to John, keep the original room picture "eds"
+            return ["eds"];
+        }
     }
 
     public actions(): Action[] {
-        return [
-            new ExamineAction(),
-            new PickupAction(),
-            new TalkAction(),
-            new CustomAction("go-to-bigslideroom", "Go to BigslideRoom", false) // Add custom action to go to BigslideRoom
-        ];
+        const playerSession: PlayerSession = getPlayerSession();
+
+        // Check if the player has the rope or flashlight in their inventory
+        if (playerSession.inventory.includes(RopeItemAlias) || playerSession.inventory.includes(FlashLightItemAlias)) {
+            // If the player has the rope or flashlight, include the corresponding custom actions
+            const actions: Action[] = [
+                new ExamineAction(),
+                new PickupAction(),
+                new TalkAction(),
+                new CustomAction("go-to-bigslideroom", "Go to BigslideRoom", false) // Add custom action to go to BigslideRoom
+            ];
+
+            // Check if the player has the rope in their inventory
+            if (playerSession.inventory.includes(RopeItemAlias)) {
+                // If the player has the rope, include the custom action to give the rope to John
+                actions.push(new CustomAction("give-rope-to-john", "Give rope to John", false));
+            }
+
+            // Check if the player has the flashlight in their inventory
+            if (playerSession.inventory.includes(FlashLightItemAlias)) {
+                // If the player has the flashlight, include the custom action to give the flashlight to John
+                actions.push(new CustomAction("give-flashlight-to-john", "Give flashlight to John", false));
+            }
+
+            return actions;
+        } else {
+            // If the player doesn't have the rope or flashlight, exclude the custom actions to give items to John
+            return [
+                new ExamineAction(),
+                new PickupAction(),
+                new TalkAction(),
+            ];
+        }
     }
 
     public objects(): GameObject[] {
-        const PlayerSession: PlayerSession = getPlayerSession();
+        const playerSession: PlayerSession = getPlayerSession();
 
         const objects: GameObject[] = [this];
 
-        if (!PlayerSession.inventory.includes(FlashLightItemAlias)) {
+        if (!playerSession.inventory.includes(FlashLightItemAlias)) {
             objects.push(new FlashLightItem());
         }
 
-        if (!PlayerSession.inventory.includes(RopeItemAlias)) {
+        if (!playerSession.inventory.includes(RopeItemAlias)) {
             objects.push(new RopeItem());
         }
 
@@ -74,12 +111,45 @@ export class EdsPush extends Room {
     }
 
     public custom(alias: string, _gameObjects?: GameObject[]): ActionResult | undefined {
-        if (alias === "go-to-bigslideroom") { // Check if the button for BigslideRoom is clicked
+        const playerSession: PlayerSession = getPlayerSession();
+
+        if (alias === "give-rope-to-john") {
+            // Check if the player has the rope in their inventory
+            if (playerSession.inventory.includes(RopeItemAlias)) {
+                // If the player has the rope, remove it from the inventory and set the flag indicating that the rope has been given to John
+                playerSession.inventory = playerSession.inventory.filter(item => item !== RopeItemAlias);
+                playerSession.gaveRopeToJohn = true;
+                return new TextActionResult(["You give the sturdy rope to John. He nods appreciatively, ready to put it to good use."]);
+            } else {
+                // If the player doesn't have the rope, display a message indicating so
+                return new TextActionResult(["You don't have the rope to give to John."]);
+            }
+        } else if (alias === "give-flashlight-to-john") {
+            // Check if the player has the flashlight in their inventory
+            if (playerSession.inventory.includes(FlashLightItemAlias)) {
+                // If the player has the flashlight, remove it from the inventory and trigger game over
+                playerSession.inventory = playerSession.inventory.filter(item => item !== FlashLightItemAlias);
+                return this.gameOver(); // Call the gameOver method
+            } else {
+                // If the player doesn't have the flashlight, display a message indicating so
+                return new TextActionResult(["You don't have the flashlight to give to John."]);
+            }
+        } else if (alias === "go-to-bigslideroom") { // Check if the button for BigslideRoom is clicked
             const bigslideRoom: BigslideRoom = new BigslideRoom(); // Create a new instance of BigslideRoom
             getPlayerSession().currentRoom = bigslideRoom.alias; // Set the current room to BigslideRoom
             return bigslideRoom.examine(); // Return the examination result of BigslideRoom
         }
 
         return undefined;
+    }
+
+    private gameOver(): ActionResult {
+        // Reset the player session by calling the resetPlayerSession function instead of resetGame
+        resetPlayerSession();
+        // Send the player back to the StartupRoom
+        const startupRoom: StartupRoom = new StartupRoom();
+        getPlayerSession().currentRoom = startupRoom.alias;
+        // Return a TextActionResult with the game over message
+        return new TextActionResult(["Game over! You gave the flashlight to John, and he died. Restarting the game..."]);
     }
 }

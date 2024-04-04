@@ -6,4 +6,11 @@ export type PlayerSession = {
     pickedUpFlashLight:boolean;
     pickedUpRope:boolean;
     talkedToJohn:boolean;
+    examineCave:boolean;
+    examineStone:boolean;
+    pickedUpMapItem: boolean;
+    talkedToKabouter: boolean;
+    raadselGekregen: boolean;
+    geheimGedrukt: boolean;
+    mapGepakt: boolean;
 };

@@ -8,10 +8,12 @@ import { TalkAction } from "../base/actions/TalkAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
 import { BoomCharacter } from "../characters/BoomCharacter";
-import { getGameObjectsFromInventory, getPlayerSession } from "../instances";
-import { DeurklinkItem, DeurklinkItemAlias } from "../items/DeurklinkItem";
+import { StoneCharacter } from "../characters/StoneCharacter";
+import { getPlayerSession } from "../instances";
+import { DeurklinkItem } from "../items/DeurklinkItem";
 import { PlayerSession } from "../types";
-import { BigRoom } from "./BigRoom";
+import {theMazeRoom} from "./theMazeRoom";
+
 
 export const CaveEntranceAlias: string = "caveentrance";
 
@@ -25,60 +27,69 @@ export class CaveEntrance extends Room{
         return "Cave Entrance";
     }
 
+    
+
     public images(): string[] {
  
         const playerSession: PlayerSession = getPlayerSession();
- 
+
         if (playerSession.talkedToBoom) {
-            return [
-                "forest6"
-            ];
+            return ["forest6"];
+        } else if (playerSession.examineCave) {
+            return ["forest7"];
         }
- 
-        else {
-            return [
-                "forest7"
-            ];
- 
-        }
+    
+        return [];
     }
+
+    
+
 
     public actions(): Action[] {
         return [
             new ExamineAction(),
             new PickupAction(),
             new TalkAction(),
-            new CustomAction("go-to-bigroom", "OPEN DOOR", false) // Add custom action to go to BigRoom
+            new CustomAction("go-to-bigroom", "Enter Cave", false) // Add custom action to go to BigRoom
         ];
     }
 
     public objects(): GameObject[] {
         const playerSession: PlayerSession = getPlayerSession();
-        const objects: GameObject[] = [this, ...getGameObjectsFromInventory()];
+        const objects: GameObject[] = [this];
 
-        if(!playerSession.inventory.includes(DeurklinkItemAlias)) {
+        if(playerSession.talkedToBoom && playerSession.examineStone) {
             objects.push(new DeurklinkItem());
         }
 
-        objects.push(new BoomCharacter());
+        objects.push(new BoomCharacter(), new StoneCharacter());
 
         return objects;
     }
 
+    
+
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Je loopt verder in het duistere bos, waar aan het einde van het pad een mysterieuze deur te zien is. Een stille spanning vult de lucht."]);
+        const playerSession: PlayerSession = getPlayerSession();
+
+        if(!playerSession.examineCave){
+            playerSession.examineCave = true;
+        }
+        
+
+        return new TextActionResult(["You walk into the dark forest, at the end of the path, a mysterious door comes into view. A silent tension fills the air."]);
     }
 
     public custom(alias: string, _gameObjects: GameObject[] | undefined): ActionResult | undefined {
         if(alias === "test me"){
-            return new TextActionResult(["Je probeert de deur open te duwen. De magische deur blijft gesloten, ongevoelig voor je pogingen."]);
+            return new TextActionResult(["You try to push the door open. The magical door remains closed, unaffected by your attempts."]);
         } else if (alias === "go-to-bigroom") { // Check if the button for BigRoom is clicked
             // Create a new instance of BigRoom
-            const bigRoom: BigRoom = new BigRoom();
+            const room: theMazeRoom = new theMazeRoom();
             // Set the current room to BigRoom
-            getPlayerSession().currentRoom = bigRoom.alias;
+            getPlayerSession().currentRoom = room.alias;
             // Return the examination result of BigRoom
-            return bigRoom.examine();
+            return room.examine();
         }
 
         return undefined;
