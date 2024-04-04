@@ -27,7 +27,7 @@ export class StartupRoom extends Room {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Based on a real story."]);
+        return new TextActionResult(["Centuries ago, in a forgotten era, Nutty Putty Cave was discovered by an ancient tribe who believed the cave to be a gateway to a parallel world. John Edward Jones, a modern adventurer with a passion for cave diving, stumbled upon this ancient legend during his travels. Fascinated by the idea of a forgotten treasure and propelled by his fearlessness, he decides to take on the challenge and unravel the secrets of Nutty Putty Cave."]);
     }
 
     public custom(alias: string, _gameObjects?: GameObject[]): ActionResult | undefined {

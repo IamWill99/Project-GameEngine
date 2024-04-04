@@ -14,4 +14,5 @@ export type PlayerSession = {
     geheimGedrukt: boolean;
     mapGepakt: boolean;
     giveDoorknob: boolean;
+    moveRoots: boolean;
 };

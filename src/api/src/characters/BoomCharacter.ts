@@ -4,8 +4,9 @@ import { TextActionResult } from "../base/actionResults/TextActionResult";
 import { Examine, ExamineActionAlias } from "../base/actions/ExamineAction";
 import { TalkChoiceAction } from "../base/actions/TalkAction";
 import { Character } from "../base/gameObjects/Character";
-import { getPlayerSession } from "../instances";
+import { getPlayerSession, resetPlayerSession } from "../instances";
 import { DeurklinkItemAlias } from "../items/DeurklinkItem";
+import { StartupRoom } from "../rooms/StartupRoom";
 import { PlayerSession } from "../types";
 
 
@@ -22,7 +23,7 @@ export class BoomCharacter extends Character implements Examine{
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Strangely, the tree has a face. Could it possibly talk?"]);
+        return new TextActionResult(["Strangely, the tree has a face. When you start walking closer to the tree, you hear it saying: \"Hungry... So hungry...\" Best to be careful. "]);
     }
 
 
@@ -30,9 +31,14 @@ export class BoomCharacter extends Character implements Examine{
         const playerSession: PlayerSession = getPlayerSession();
 
         if(choiceId === 20){
-            return new TextActionResult(["The tree becomes angry."]);
+            return this.gameOver();
+            
         }
         else if(choiceId === 21){
+            if(!playerSession.moveRoots){
+                playerSession.moveRoots = true;
+            }
+
             return new TextActionResult(["\"Beyond the shadows of the cave, lie hidden secrets. A light is your guide through the darkness, a beacon of hope in the depths of the night\" says the tree."]);
         }
         else if(choiceId === 22){
@@ -41,7 +47,7 @@ export class BoomCharacter extends Character implements Examine{
             if(!playerSession.giveDoorknob){
                 playerSession.giveDoorknob = true;
             }
-            
+
             return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\" You hear something clicking in the distance."]);
         }
         
@@ -65,7 +71,15 @@ export class BoomCharacter extends Character implements Examine{
         );
     }
 
-
+    private gameOver(): ActionResult {
+        // Reset the player session by calling the resetPlayerSession function instead of resetGame
+        resetPlayerSession();
+        // Send the player back to the StartupRoom
+        const startupRoom: StartupRoom = new StartupRoom();
+        getPlayerSession().currentRoom = startupRoom.alias;
+        // Return a TextActionResult with the game over message
+        return new TextActionResult(["The tree became furious and ate you... Game over!"]);
+    }
 
 
 }

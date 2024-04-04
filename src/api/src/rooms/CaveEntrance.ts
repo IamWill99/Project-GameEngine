@@ -89,7 +89,6 @@ export class CaveEntrance extends Room{
             playerSession.examineCave = true;
         }
         
-
         return new TextActionResult(["You walk into the dark forest, at the end of the path, a mysterious door comes into view. A silent tension fills the air."]);
     }
 
@@ -107,4 +106,6 @@ export class CaveEntrance extends Room{
 
         return undefined;
     }
+
+    
 }
