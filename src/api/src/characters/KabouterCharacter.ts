@@ -1,3 +1,4 @@
+//import { PickupMapAction } from "../actions/PickupMapAction";
 import { ActionResult } from "../base/actionResults/ActionResult";
 import { TalkActionResult } from "../base/actionResults/TalkActionResult";
 import { TextActionResult } from "../base/actionResults/TextActionResult";
@@ -85,5 +86,11 @@ export class KabouterCharacter extends Character implements Examine {
         choiceActions
            
         );
+
+     //   if(!playerSession.raadselOpgelost) {
+     //       playerSession.raadselOpgelost = true;
+      //  }
+
+     //   return new PickupMapAction
     }
 }
