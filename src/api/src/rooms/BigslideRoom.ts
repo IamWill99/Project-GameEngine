@@ -36,6 +36,7 @@ export class BigslideRoom extends Room {
     }
 
     public actions(): Action[] {
+        
         return [
             new ExamineAction(),
             new PickupAction(),
