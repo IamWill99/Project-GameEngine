@@ -14,11 +14,14 @@ export class GameCanvas extends LitElement {
             font-family: Arial, sans-serif;
             background-color: black;
             padding: 20px;
+            justify-content:center;
+            text-align:center;
         }
 
         .left-panel {
             flex: 1;
             margin-right: 20px;
+            
         }
 
         .right-panel {
@@ -30,21 +33,25 @@ export class GameCanvas extends LitElement {
         .title {
             font-size: 30px; /* Verhoog de grootte van de titeltekst */
             margin-bottom: 20px;
+            text-align: center;
+            justify-content: center;
         }
 
         .content {
             font-size: 18px; /* Verhoog de grootte van de inhoudstekst */
             line-height: 1.5;
+            justify-content:center;
         }
 
         .footer {
             margin-top: auto;
+            text-align: center;
         }
 
         .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #333;
+            background-color: #1f1e1e;
             color: white;
             border: none;
             border-radius: 5px;
