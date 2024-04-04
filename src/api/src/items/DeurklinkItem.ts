@@ -16,11 +16,11 @@ export class DeurklinkItem extends Item implements Examine, Pickup{
     }
 
     public name(): string {
-        return "Deurklink";
+        return "Doorknob";
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Het is een gouden deurklink. Waar zou dit gebruikt kunnen worden?"]);
+        return new TextActionResult(["It's a golden doorknob. Where could this be used?"]);
     }
 
     public pickup(): ActionResult | undefined {
@@ -30,10 +30,10 @@ export class DeurklinkItem extends Item implements Examine, Pickup{
             playerSession.pickedUpDeurklink = true;
             playerSession.inventory.push(DeurklinkItemAlias);
 
-            return new TextActionResult(["Je pakt de deurklink op."]);
+            return new TextActionResult(["You pick up the doorknob."]);
         }
 
-        return new TextActionResult(["Je hebt de deurklink al opgepakt."]);
+        return new TextActionResult(["You already picked up the doorknob."]);
     }
 
 
