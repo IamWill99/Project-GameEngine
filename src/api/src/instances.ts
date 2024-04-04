@@ -42,6 +42,7 @@ export function createNewPlayerSession(): PlayerSession {
         talkedToKabouter: false,
         raadselGekregen: false,
         geheimGedrukt: false,
+        mapGepakt: false,
 
     };
 }

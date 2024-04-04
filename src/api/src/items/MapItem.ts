@@ -27,6 +27,7 @@ export class Mapitem extends Item implements Examine, Pickup {
 
         if(!playerSession.pickedUpMapItem) {
             playerSession.pickedUpMapItem = true;
+            playerSession.mapGepakt = true;
             playerSession.inventory.push(MapItemAlias);
 
             return new TextActionResult(["Je pakt de kaart op"]);

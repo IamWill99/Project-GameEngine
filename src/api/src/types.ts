@@ -12,4 +12,5 @@ export type PlayerSession = {
     talkedToKabouter: boolean;
     raadselGekregen: boolean;
     geheimGedrukt: boolean;
+    mapGepakt: boolean;
 };
