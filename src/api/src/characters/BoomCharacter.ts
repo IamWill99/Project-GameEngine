@@ -38,6 +38,10 @@ export class BoomCharacter extends Character implements Examine{
         else if(choiceId === 22){
             playerSession.inventory = [];
             
+            if(!playerSession.giveDoorknob){
+                playerSession.giveDoorknob = true;
+            }
+            
             return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\" You hear something clicking in the distance."]);
         }
         
@@ -47,6 +51,8 @@ export class BoomCharacter extends Character implements Examine{
         if(!playerSession.talkedToBoom){
             playerSession.talkedToBoom = true;
         }
+
+        
 
 
         if(playerSession.inventory.includes(DeurklinkItemAlias)) {

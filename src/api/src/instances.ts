@@ -38,6 +38,7 @@ export function createNewPlayerSession(): PlayerSession {
         pickedUpRope: true,
         talkedToJohn: false,
         examineStone: false,
+        giveDoorknob: false,
         pickedUpMapItem: false,
         talkedToKabouter: false,
         raadselGekregen: false,
