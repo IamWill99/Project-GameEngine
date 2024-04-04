@@ -29,7 +29,7 @@ export class BigslideRoom extends Room {
     public images(): string[] {
         const playerSession: PlayerSession = getPlayerSession();
         if (playerSession.talkedToJohn) {
-            return ["john"];
+            return ["john3"];
         } else {
             return ["bigslide"];
         }

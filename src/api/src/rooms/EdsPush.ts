@@ -36,7 +36,7 @@ export class EdsPush extends Room {
             return ["edspush1"];
         } else {
             // If the rope is not given to John, keep the original room picture "eds"
-            return ["eds"];
+            return ["edspush2"];
         }
     }
 
