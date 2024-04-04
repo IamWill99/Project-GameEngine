@@ -5,14 +5,21 @@ import { ExampleCharacter, ExampleCharacterAlias } from "./characters/ExampleCha
 import { SkeletonCharacter, SkeletonCharacterAlias } from "./characters/SkeletonCharacter";
 import { ExampleItem, ExampleItemAlias } from "./items/ExampleItem";
 import { GemstoneItem, GemstoneItemAlias } from "./items/GemstoneItem";
-import { ExampleRoom, ExampleRoomAlias } from "./rooms/ExampleRoom";
 import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
-import { Thebigroom, ThebigroomAlias } from "./rooms/Thebigroom";
 import { PlayerSession } from "./types";
 import { StoneCharacter, StoneCharacterAlias } from "./characters/StoneCharacter";
 import { MapItemAlias, Mapitem } from "./items/MapItem";
 import { theMazeRoom, theMazeRoomAlias } from "./rooms/theMazeRoom";
 import { KabouterCharacter, KabouterCharacterAlias } from "./characters/KabouterCharacter";
+import {BigslideRoom, BigslideRoomAlias} from "./rooms/BigslideRoom";
+import {CaveEntrance, CaveEntranceAlias} from "./rooms/CaveEntrance";
+import {BigRoom, BigRoomAlias} from "./rooms/BigRoom";
+import {EdsPush, EdsPushAlias} from "./rooms/EdsPush";
+import {DeurklinkItem, DeurklinkItemAlias} from "./items/DeurklinkItem";
+import {BoomCharacter, BoomCharacterAlias} from "./characters/BoomCharacter";
+import {FlashLightItem, FlashLightItemAlias} from "./items/FlashLightItem";
+import {RopeItem, RopeItemAlias} from "./items/RopeItem";
+import {JohnCharacter, JohnCharacterAlias} from "./characters/JohnCharacter";
 
 /**
  * Create a new player session object

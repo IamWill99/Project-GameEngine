@@ -12,7 +12,7 @@ import { StoneCharacter } from "../characters/StoneCharacter";
 import { getPlayerSession } from "../instances";
 import { DeurklinkItem } from "../items/DeurklinkItem";
 import { PlayerSession } from "../types";
-import { BigRoom } from "./BigRoom";
+import {theMazeRoom} from "./theMazeRoom";
 
 
 export const CaveEntranceAlias: string = "caveentrance";
@@ -85,11 +85,11 @@ export class CaveEntrance extends Room{
             return new TextActionResult(["You try to push the door open. The magical door remains closed, unaffected by your attempts."]);
         } else if (alias === "go-to-bigroom") { // Check if the button for BigRoom is clicked
             // Create a new instance of BigRoom
-            const bigRoom: BigRoom = new BigRoom();
+            const room: theMazeRoom = new theMazeRoom();
             // Set the current room to BigRoom
-            getPlayerSession().currentRoom = bigRoom.alias;
+            getPlayerSession().currentRoom = room.alias;
             // Return the examination result of BigRoom
-            return bigRoom.examine();
+            return room.examine();
         }
 
         return undefined;
