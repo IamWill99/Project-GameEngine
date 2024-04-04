@@ -30,6 +30,7 @@ export class KabouterCharacter extends Character implements Examine {
 
     public talk(choiceId?: number | undefined): ActionResult | undefined {
         const playerSession: PlayerSession = getPlayerSession();
+        playerSession.raadselGekregen = true;
 
 
         if(choiceId === 500) {
@@ -39,6 +40,7 @@ export class KabouterCharacter extends Character implements Examine {
             return new TextActionResult(["Kabouter: In duistere diepten, daar ben ik te vinden. Een schat van kennis, ver weg van het binden. Met ogen die fonkelen, maar nooit echt zien. Raad eens mijn naam, wat ben ik misschien? Een fluistering in de wind, een echo van tijd, In het hart van de aarde, waar geheimen zich bevrijden. Zoek me niet te ver, ik ben nabij, Raad eens mijn naam, en ik ben van jou en jij van mij. Wat ben ik?"]);
         }
         else if(choiceId === 502){
+            playerSession.geheimGedrukt = true;
             return new TextActionResult(["Kabouter: Dat is goed! Pak de kaart op en ga verder."]) ;
         }
         else if(choiceId === 503){
@@ -55,7 +57,6 @@ export class KabouterCharacter extends Character implements Examine {
          
 
         else if(!playerSession.raadselGekregen) {
-            playerSession.raadselGekregen = true;
     
            return new CustomAction("raadsel", "hetraadsel", false);
         }        
@@ -77,10 +78,6 @@ export class KabouterCharacter extends Character implements Examine {
         if(!playerSession.talkedToKabouter) {
             playerSession.talkedToKabouter = true;
 
-        }
-
-        if(!playerSession.raadselGekregen) {
-            playerSession.raadselGekregen = true;
         }
         
         return new TalkActionResult(this, ["Kabouter: hallo meneer."],

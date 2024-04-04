@@ -25,6 +25,8 @@ export function createNewPlayerSession(): PlayerSession {
         pickedUpMapItem: false,
         talkedToKabouter: false,
         raadselGekregen: false,
+        geheimGedrukt: false,
+
     };
 }
 

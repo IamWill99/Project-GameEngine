@@ -4,4 +4,5 @@ export type PlayerSession = {
     pickedUpMapItem: boolean;
     talkedToKabouter: boolean;
     raadselGekregen: boolean;
+    geheimGedrukt: boolean;
 };
