@@ -25,7 +25,6 @@ export class BoomCharacter extends Character implements Examine{
         return new TextActionResult(["Strangely, the tree has a face. Could it possibly talk?"]);
     }
 
-    
 
     public talk(choiceId?: number | undefined): ActionResult | undefined {
         const playerSession: PlayerSession = getPlayerSession();
@@ -39,7 +38,7 @@ export class BoomCharacter extends Character implements Examine{
         else if(choiceId === 22){
             playerSession.inventory = [];
             
-            return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\""]);
+            return new TextActionResult(["You give the doorknob to the tree. It eats the doorknob. \"Mmmmmm.\" You hear something clicking in the distance."]);
         }
         
         const choiceActions : TalkChoiceAction[] = [new TalkChoiceAction(20, "Insult the tree"), new TalkChoiceAction(21, "Ask for advice")

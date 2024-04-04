@@ -6,4 +6,6 @@ export type PlayerSession = {
     pickedUpFlashLight:boolean;
     pickedUpRope:boolean;
     talkedToJohn:boolean;
+    examineCave:boolean;
+    examineStone:boolean;
 };

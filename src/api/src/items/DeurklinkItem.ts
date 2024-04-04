@@ -33,7 +33,7 @@ export class DeurklinkItem extends Item implements Examine, Pickup{
             return new TextActionResult(["You pick up the doorknob."]);
         }
 
-        return new TextActionResult(["You have already picked up the doorknob."]);
+        return new TextActionResult(["You already picked up the doorknob."]);
     }
 
 

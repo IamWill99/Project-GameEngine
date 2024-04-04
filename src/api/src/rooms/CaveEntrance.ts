@@ -8,10 +8,12 @@ import { TalkAction } from "../base/actions/TalkAction";
 import { GameObject } from "../base/gameObjects/GameObject";
 import { Room } from "../base/gameObjects/Room";
 import { BoomCharacter } from "../characters/BoomCharacter";
-import { getGameObjectsFromInventory, getPlayerSession } from "../instances";
-import { DeurklinkItem, DeurklinkItemAlias } from "../items/DeurklinkItem";
+import { StoneCharacter } from "../characters/StoneCharacter";
+import { getPlayerSession } from "../instances";
+import { DeurklinkItem } from "../items/DeurklinkItem";
 import { PlayerSession } from "../types";
 import { BigRoom } from "./BigRoom";
+
 
 export const CaveEntranceAlias: string = "caveentrance";
 
@@ -25,47 +27,56 @@ export class CaveEntrance extends Room{
         return "Cave Entrance";
     }
 
+    
+
     public images(): string[] {
  
         const playerSession: PlayerSession = getPlayerSession();
- 
+
         if (playerSession.talkedToBoom) {
-            return [
-                "forest6"
-            ];
+            return ["forest6"];
+        } else if (playerSession.examineCave) {
+            return ["forest7"];
         }
- 
-        else {
-            return [
-                "forest7"
-            ];
- 
-        }
+    
+        return [];
     }
+
+    
+
 
     public actions(): Action[] {
         return [
             new ExamineAction(),
             new PickupAction(),
             new TalkAction(),
-            new CustomAction("go-to-bigroom", "Open Door", false) // Add custom action to go to BigRoom
+            new CustomAction("go-to-bigroom", "Enter Cave", false) // Add custom action to go to BigRoom
         ];
     }
 
     public objects(): GameObject[] {
         const playerSession: PlayerSession = getPlayerSession();
-        const objects: GameObject[] = [this, ...getGameObjectsFromInventory()];
+        const objects: GameObject[] = [this];
 
-        if(!playerSession.inventory.includes(DeurklinkItemAlias)) {
+        if(playerSession.talkedToBoom && playerSession.examineStone) {
             objects.push(new DeurklinkItem());
         }
 
-        objects.push(new BoomCharacter());
+        objects.push(new BoomCharacter(), new StoneCharacter());
 
         return objects;
     }
 
+    
+
     public examine(): ActionResult | undefined {
+        const playerSession: PlayerSession = getPlayerSession();
+
+        if(!playerSession.examineCave){
+            playerSession.examineCave = true;
+        }
+        
+
         return new TextActionResult(["You walk into the dark forest, at the end of the path, a mysterious door comes into view. A silent tension fills the air."]);
     }
 

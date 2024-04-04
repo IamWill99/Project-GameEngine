@@ -16,6 +16,7 @@ import { StartupRoom, StartupRoomAlias } from "./rooms/StartupRoom";
 import { BigRoom, BigRoomAlias } from "./rooms/BigRoom";
 import { EdsPush, EdsPushAlias } from "./rooms/EdsPush";
 import { PlayerSession } from "./types";
+import { StoneCharacter, StoneCharacterAlias } from "./characters/StoneCharacter";
 
 /**
  * Create a new player session object
@@ -29,9 +30,11 @@ export function createNewPlayerSession(): PlayerSession {
         pickedUpGemstone: true,
         pickedUpDeurklink: false,
         talkedToBoom: false,
+        examineCave: false,
         pickedUpFlashLight: true,
         pickedUpRope: true,
         talkedToJohn: false,
+        examineStone: false,
     };
 }
 
@@ -99,6 +102,9 @@ export function getGameObjectByAlias(alias: string): GameObject | undefined {
 
         case BoomCharacterAlias:
             return new BoomCharacter();
+
+        case StoneCharacterAlias:
+            return new StoneCharacter();    
 
         case FlashLightItemAlias:
             return new FlashLightItem();
