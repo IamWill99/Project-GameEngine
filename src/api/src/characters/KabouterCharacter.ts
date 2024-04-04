@@ -25,7 +25,7 @@ export class KabouterCharacter extends Character implements Examine {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Het is een klein kaboutertje."]);
+        return new TextActionResult(["There is a small gnome."]);
     }
 
     public talk(choiceId?: number | undefined): ActionResult | undefined {
@@ -34,17 +34,17 @@ export class KabouterCharacter extends Character implements Examine {
 
 
         if(choiceId === 500) {
-            return new TextActionResult(["Kabouter: ik geef je de kaart van het doolhof als je mijn raadsel oplost."]);
+            return new TextActionResult(["Gnome: I will give you the map if you solve my riddle."]);
         }
         else if(choiceId === 501){
-            return new TextActionResult(["Kabouter: In duistere diepten, daar ben ik te vinden. Een schat van kennis, ver weg van het binden. Met ogen die fonkelen, maar nooit echt zien. Raad eens mijn naam, wat ben ik misschien? Een fluistering in de wind, een echo van tijd, In het hart van de aarde, waar geheimen zich bevrijden. Zoek me niet te ver, ik ben nabij, Raad eens mijn naam, en ik ben van jou en jij van mij. Wat ben ik?"]);
+            return new TextActionResult(["Gnome:I speak without a mouth and hear without ears I am not alive, yet I conquer fears. In darkness I dwell, yet light I reveal, Invisible to eyes, yet my presence you feel. What am I?"]);
         }
         else if(choiceId === 502){
             playerSession.geheimGedrukt = true;
-            return new TextActionResult(["Kabouter: Dat is goed! Pak de kaart op en ga verder."]) ;
+            return new TextActionResult(["Gnome: The answer is correct! Pick up the map and find your way out"]) ;
         }
         else if(choiceId === 503){
-            return new TextActionResult(["Kabouter: Dat is fout"]);
+            return new TextActionResult(["Gnome: that is the wrong answer"]);
         }
         else if(choiceId === 504) {
             playerSession.inventory = [];
@@ -62,9 +62,9 @@ export class KabouterCharacter extends Character implements Examine {
         }        
 
         const choiceActions: TalkChoiceAction[] = [
-            new TalkChoiceAction(500, "Vraag de weg aan de kabouter"), 
+            new TalkChoiceAction(500, "Ask the gnome for a way out"), 
         
-            new TalkChoiceAction(501, "Vraag om het raadsel."), new TalkChoiceAction(502, "een geheim?"), new TalkChoiceAction(503, "een geur?")
+            new TalkChoiceAction(501, "Ask for the riddle."), new TalkChoiceAction(502, "a voice?"), new TalkChoiceAction(503, "a smell?")
 
         
         ];
@@ -80,7 +80,7 @@ export class KabouterCharacter extends Character implements Examine {
 
         }
         
-        return new TalkActionResult(this, ["Kabouter: hallo meneer."],
+        return new TalkActionResult(this, ["Kabouter: hello stranger."],
         choiceActions
            
         );
