@@ -96,7 +96,7 @@ export class theMazeRoom extends Room {
     }
 
     public examine(): ActionResult | undefined {
-        return new TextActionResult(["Het is een groot Doolhof."]);
+        return new TextActionResult(["There is a big maze in front of you."]);
     }
 
     public custom(alias: string, _gameObjects: GameObject[] | undefined): ActionResult | undefined {
