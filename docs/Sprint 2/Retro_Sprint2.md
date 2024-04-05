@@ -1,3 +1,7 @@
+![Afbeelding Retro startstopcontinue](blok3retro.png)
+
+
+
 ****# Retro sprint 2 blok 3
 Voor deze sprint hebben we de retrospective methode: what is working and what is not working gebruikt. Als u naar het Plaatje hierboven kijkt ziet u in de linker kolom wat goed ging tijdens het werken en in de rechter kolom wat minder goed ging.
 
