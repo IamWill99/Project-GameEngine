@@ -26,3 +26,19 @@ Het belang van effectieve samenwerking en communicatie binnen het team voor het 
 
 **Conclusie:**
 Sprint 2 was een leerzame ervaring waarin ik mijn vaardigheden als ontwikkelaar verder heb ontwikkeld en nieuwe terreinen heb verkend. Ik ben trots op mijn vooruitgang, maar besef ook dat er altijd ruimte is voor verbetering.
+
+
+Individuele reflectie 
+Siem Baltus
+Onderdeel 1
+Advies als externe adviseur
+
+De concrete praktische adviezen om dingen die beter kunnen beter te laten verlopen zijn: als eerst dat er vaak in de les nog iemand afwezig was waardoor je niet goed als een team kon samenwerken. Mijn advies om dit beter te laten gaan is dat er een beter samenwerkings contract moet worden opgesteld waarin er consequenties worden gegeven bij afwezigheid in de lessen. Hierdoor gaat iedereen waarschijnlijk vaker aanwezig zijn waardoor je als team goed samen kan gaan werken in de lessen. Als tweede wil ik als advies geven dat er een betere sprint planning moet worden gemaakt, met daarin goede specifieke zelfgemaakte user story’s. Dit moet gedaan worden zodat je meer werk af kunt gaan maken als team, en dat je precies weet hoe ver je als team bent met het werk dat je hebt ingeplant in de sprint. Zo krijg je dus een overzicht met wat je al af hebt en nog moet afmaken, en weet je dus ook of je als team wat harder moet gaan werken om het af te krijgen of dat je met je team al goed op schema zit. Als laatste wil ik als advies geven dat je voor de volgende keer aan het begin van het blok en sprint al wat harder aan het werk moet gaan zodat je aan het einde van het blok niet opeens nog heel hard hoeft te werken om alles maar op tijd af te krijgen. Dit kan je doen door dus een goede planning te maken, en je daar als team dus ook aan gaat houden.
+
+Onderdeel 2
+
+Twee zaken  waarop ik mezelf heb ontwikkeld in dit blok:
+
+1: Het eerste waar ik mezelf heb verbeterd in dit blok is het programmeren in typescript. Ik heb erg veel geleerd over de verschillende classes in typescript, en ik heb geleerd hoe ik deze kan toepassen in mijn code. Ook heb ik geleerd om met de game engine te werken en hierin dus een text-based game te maken. Aan het begin van het blok had ik wel een beetje ervaring met typescript omdat ik dit in het vorige blok heb gebruikt. Maar ik wist hier dus nog niet super veel over maar door dit blok heb ik er wel een stuk meer over geleerd. 
+
+2: Als tweede heb ik me ontwikkeld in het samenwerken in een grotere groep. Dit heb ik voor dit blok eigenlijk nog nooit echt gedaan, dus ik wist aan het begin van het blok nog eigenlijk ook niet hoe je dit goed kan doen. Hierover heb ik dit blok dus veel geleerd. 
