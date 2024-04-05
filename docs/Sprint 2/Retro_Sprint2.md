@@ -45,6 +45,8 @@ De concrete praktische adviezen om dingen die beter kunnen beter te laten verlop
 
 1: Het eerste waar ik mezelf heb verbeterd in dit blok is het programmeren in typescript. Ik heb erg veel geleerd over de verschillende classes in typescript, en ik heb geleerd hoe ik deze kan toepassen in mijn code. Ook heb ik geleerd om met de game engine te werken en hierin dus een text-based game te maken. Aan het begin van het blok had ik wel een beetje ervaring met typescript omdat ik dit in het vorige blok heb gebruikt. Maar ik wist hier dus nog niet super veel over maar door dit blok heb ik er wel een stuk meer over geleerd. 
 
+
+
 2: Als tweede heb ik me ontwikkeld in het samenwerken in een grotere groep. Dit heb ik voor dit blok eigenlijk nog nooit echt gedaan, dus ik wist aan het begin van het blok nog eigenlijk ook niet hoe je dit goed kan doen. Hierover heb ik dit blok dus veel geleerd. 
 
 
@@ -57,3 +59,34 @@ Hier zijn twee nieuwe punten die het team zou kunnen overwegen:
 ## Ontwikkeling tijdens dit blok:
 * Timemanagement: Ik heb geleerd hoe ik mijn tijd beter kan beheren. Dat betekent dat ik heb ontdekt hoe ik mijn taken slim kan plannen en organiseren, zodat ik ze op tijd kan afronden. Dit helpt me om niet gestrest te raken en om mijn werk efficiënter te doen.
 * Luisteren naar feedback: Ik heb geleerd hoe ik beter kan luisteren naar wat anderen te zeggen hebben over mijn werk. Dat betekent dat ik open sta om te horen wat ze goed vinden en wat ik kan verbeteren. Het helpt me om te groeien en mezelf steeds te verbeteren.
+
+
+**Individuele reflectie William Boutros**
+05-04-2024 --- blok 3 sprint 3
+
+In dit verslag reflecteer ik op mijn ervaring en vooruitgang, doormiddel van een terugblik op afgelopen sprinten. Dit verslag is bedoeld om mijn professionele ontwikkeling te documenteren, hoe ik in de toekomst te werk zal gaan.. Dit wordt besproken aan de hand van de volgende onderwerpen:
+
+-	Twee concrete adviezen uit het oogpunt van een externe adviseur
+-	Twee zaken waar ik me heb ontwikkeld dit blok
+
+**Twee adviezen als externe adviseur**
+Gekeken naar het samenwerkingsproces van het blok zijn bepaalde punten die verbeterd kunnen worden. Door het gebrek aan motivatie van bepaalde teamleden is mijn advies om met het hele groepje aan tafel te zitten om te bespreken waarom deze betrokkenheid ontbreekt. Verder zou de samenwerkingscontract uitgebreider uitgewerkt kunnen worden. Wanneer een teamlid niet aan het contract houdt, sneller samenkomen om te bespreken waarom. Blok 3 is dit niet genoeg gebeurd.
+
+Mijn volgende advies is om meer elkaars werk in de gaten te houden. Dit blok zijn jullie te veel met jullie eigen level bezig geweest, waardoor je niet heb gezien hoe je andere teamleden ervoor stonden. Doe voortaan een stand-up als groep aan het begin van de dag. Zorg ervoor dat iedereen aanwezig is en bespreek je vooruitgang, wat je gaat doen en waar je tegen aan loopt. Dit houdt iedereen op de hoogte.
+
+**Twee zaken waar ik me heb ontwikkeld**
+Deze twee zaken heb ik me dit blok ontwikkeld:
+
+-	Expertise in Typescript en gebruik van OOP
+-	Het gebruik van Agile
+
+Persoonlijk ben ik dit blok blij met de vooruitgang van mijn gebruik van Typescript.  Aan het begin van dit blok had ik nog steeds niet helemaal de aspecten van OOP onder de knie. Hier werd ik ook op beoordeeld in blok 2. Door de volgende momenten zijn mijn vaardigheden op het gebied van Typescript verbeterd:
+
+-	Werken met de game engine
+-	Tutorials op luca-stars gekeken
+-	Uitleg van docent Philip bij een expertreview voor K1
+
+Nu kan ik comfortabel de vier aspecten van OOP uitleggen en toepassen in toekomstige projecten, waar ik eerst moeite mee had. Verder heb ik geleerd hoe ik If-statements moet gebruiken in mijn code, en wat voor effect ze hebben. Een voorbeeld is: Wanneer je een deurklink hebt opgepakt in mijn level, dan kan je pas deze geven aan de boom. Als je deze niet hebt opgepakt, dan krijg je de optie niet te zien.
+
+Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 had ik mijn User Stories te groot gemaakt en niet genoeg uitgewerkt, waardoor er te veel overbleven voor de volgende sprint. Door advies van de docenten heb ik mijn User Stories verder verdeelt onder kleinere Stories, zodat deze behapbaar zijn en voor het einde van de volgend sprint afgemaakt kunnen worden. Wel heb ik gemerkt bij de burndownchart dat ze altijd aan het einde van de sprint op close worden gezet, dus dit zal een verbeterpunt zijn voor het volgende project.
+
