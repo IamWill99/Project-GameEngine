@@ -103,11 +103,11 @@ Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 
 **Twee adviezen als externe adviseur**
 
 Bij het evalueren van het samenwerkingsproces binnen ons team, zijn er bepaalde aspecten die verbeterd kunnen worden om onze doelstellingen beter te bereiken.
-**Allereerst is het van cruciaal belang om onze documentatie te verbeteren:** Door dit te doen, wordt informatie gemakkelijk toegankelijk voor alle teamleden, wat op zijn beurt zal bijdragen aan het handhaven van consistentie en efficiëntie in ons werkproces. Een betere documentatie zorgt ervoor dat wij allemaal op dezelfde pagina zijn en dat essentiële informatie niet verloren gaat.
+**Allereerst is het van belang om onze documentatie te verbeteren:** Door dit te doen, wordt informatie gemakkelijk toegankelijk voor alle teamleden, wat op zijn beurt zal bijdragen aan het handhaven van consistentie en efficiëntie in ons werkproces. Een betere documentatie zorgt ervoor dat wij allemaal op dezelfde pagina zijn en dat essentiële informatie niet verloren gaat.
 
-**Een ander punt van verbetering is het versterken van ons teamverband:** wij moeten meer nadruk leggen op het ondersteunen van elkaar en het delen van middelen, zelfs als wij individuele taken hebben. Het is van cruciaal belang dat wij ons realiseren dat wij als team één geheel vormen en dat het succes van één teamlid bijdraagt aan het succes van ons allemaal. Door elkaar te ondersteunen en samen te werken, kunnen wij onze doelstellingen efficiënter bereiken en een sterker team opbouwen.
+**Een ander punt van verbetering is het versterken van ons teamverband:** Wij moeten meer nadruk leggen op het ondersteunen van elkaar en het delen van middelen, zelfs als wij individuele taken hebben. Het is van belang dat wij ons realiseren dat wij als team één geheel vormen en dat het succes van één teamlid bijdraagt aan het succes van ons allemaal. Door elkaar te ondersteunen en samen te werken, kunnen wij onze doelstellingen efficiënter bereiken en een sterker team opbouwen.
 
-Een ander belangrijk aspect dat onze aandacht verdient, is het bewuster volgen van elkaars werk. wij hebben gemerkt dat tijdens voorgaande periodes ieder van ons vooral gefocust was op de eigen taken, waardoor wij wellicht niet goed op de hoogte waren van elkaars voortgang en uitdagingen. Om dit te verbeteren, stel ik voor om regelmatig daily stand-up meetings te houden aan het begin van de dag waarbij wij als team samenkomen. Tijdens deze meetings kunnen wij onze individuele voortgang bespreken, onze plannen voor de dag delen en eventuele obstakels waar wij tegenaan lopen benoemen. Door deze open communicatie te stimuleren, kunnen wij beter op elkaar anticiperen en elkaar ondersteunen waar nodig, wat uiteindelijk zal bijdragen aan een efficiënter en meer samenhangend team.
+Een ander belangrijk aspect dat onze aandacht verdient, is het bewuster volgen van elkaars werk. Wij hebben gemerkt dat tijdens voorgaande periodes ieder van ons vooral gefocust was op de eigen taken, waardoor wij wellicht niet goed op de hoogte waren van elkaars voortgang en uitdagingen. Om dit te verbeteren, stel ik voor om regelmatig daily stand-up meetings te houden aan het begin van de dag waarbij wij als team samenkomen. Tijdens deze meetings kunnen wij onze individuele voortgang bespreken, onze plannen voor de dag delen en eventuele obstakels waar wij tegenaan lopen benoemen. Door deze open communicatie te stimuleren, kunnen wij beter op elkaar anticiperen en elkaar ondersteunen waar nodig, wat uiteindelijk zal bijdragen aan een efficiënter en meer samenhangend team.
 
 
 **Wat heb ik geleerd van deze sprint:**
@@ -116,9 +116,9 @@ Het hebben van testplannen voor je game is ontzettend belangrijk om verschillend
 
 **Kwaliteitsborging:** Testplannen helpen bij het waarborgen van de kwaliteit van je game. Ze stellen je in staat om systematisch alle aspecten van het spel te testen, inclusief functionaliteit, prestaties, gebruikerservaring, enzovoort.
 
-**Bugs opsporen:** Door een gedetailleerd testplan te hebben, kun je potentiële bugs en fouten in je game identificeren voordat deze de gebruikerservaring kunnen beïnvloeden. Dit is cruciaal om een soepele en probleemloze gameplay-ervaring te garanderen.
+**Bugs opsporen:** Door een gedetailleerd testplan te hebben, kun je potentiële bugs en fouten in je game identificeren, voordat deze de gebruikerservaring kunnen beïnvloeden. Dit is cruciaal om een soepele en probleemloze gameplay-ervaring te garanderen.
 
-**Efficiëntie:** Testplannen helpen bij het efficiënt organiseren van testactiviteiten. Ze stellen het ontwikkelteam in staat om te focussen op specifieke gebieden van de game die moeten worden getest, waardoor tijd en middelen worden bespaard.
+**Efficiëntie:** Testplannen helpen bij het organiseren van testactiviteiten. Ze stellen het ontwikkelteam in staat om te focussen op specifieke gebieden van de game die moeten worden getest, waardoor tijd en middelen worden bespaard.
 
 **Risicobeheer:** Als je van tevoren testplannen maakt, kun je mogelijke problemen in de ontwikkeling van de game ontdekken en oplossen. Zo voorkom je verrassingen later in het proces of bij de lancering van de game
 
@@ -136,7 +136,7 @@ Het hebben van testplannen voor je game is ontzettend belangrijk om verschillend
 
 In het begin van deze periode was mijn kennis over objectgeoriënteerd programmeren nog in ontwikkeling.Ik begreep de basisprincipes niet goed, en ik had nog niet echt een diep begrip ervan. Gedurende deze periode heb ik echter enorme vooruitgang gemaakt. Ik heb hard gewerkt, waarbij ik begrippen ben gaan opschrijven, filmpjes heb bekeken en informatie in mijn eigen woorden heb verwerkten veel geleerd, waardoor mijn begrip van objectgeoriënteerd programmeren op een nieuw niveau is gekomen.
 
-Wat echt helpt, is dat ik nu in staat ben om de principes van objectgeoriënteerd programmeren uit te leggen in mijn code. Ik kan het nu aan anderen uitleggen, zelfs met voorbeelden erbij, waardoor het makkelijker te begrijpen is.
+Wat mij echt geholpen heeft, is dat ik nu in staat ben om de principes van objectgeoriënteerd programmeren uit te leggen in mijn code. Ik kan het nu aan anderen uitleggen, zelfs met voorbeelden erbij, waardoor het makkelijker te begrijpen is.
 
 Anderen hebben ook gemerkt dat ik vooruitgang heb geboekt. Een expert heeft mijn werk beoordeeld en vond dat ik grote stappen heb gezet in mijn begrip van objectgeoriënteerd programmeren. Ook mijn docent heeft mij aangemoedigd om door te gaan met mijn ontwikkeling op dit gebied, wat mij extra motivatie geeft om door te zetten.
 
