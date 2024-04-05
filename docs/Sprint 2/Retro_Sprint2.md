@@ -1,5 +1,6 @@
-**Retro sprint 2 blok 3**
+# Retro sprint 2 blok 3
 Voor deze sprint hebben we de retrospective methode: what is working and what is not working gebruikt. Als u naar het Plaatje hierboven kijkt ziet u in de linker kolom wat goed ging tijdens het werken en in de rechter kolom wat minder goed ging.
+
 **Reflectie van Eduard Ohanian op Sprint 2 - 5 april 2024**
 
 Na afronding van Sprint 2 ben ik als Eduard Ohanian zeer tevreden met de vooruitgang die ik heb geboekt en de nieuwe vaardigheden die ik heb ontwikkeld. Deze sprint heeft mijn horizon verbreed en mijn zelfvertrouwen als ontwikkelaar versterkt, terwijl het me tegelijkertijd heeft uitgedaagd om mijn grenzen te verleggen en nieuwe terreinen te verkennen.
