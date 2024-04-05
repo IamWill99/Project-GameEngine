@@ -114,23 +114,23 @@ Een ander belangrijk aspect dat onze aandacht verdient, is het bewuster volgen v
 
 Het hebben van testplannen voor je game is ontzettend belangrijk om verschillende redenen:
 
-Kwaliteitsborging: Testplannen helpen bij het waarborgen van de kwaliteit van je game. Ze stellen je in staat om systematisch alle aspecten van het spel te testen, inclusief functionaliteit, prestaties, gebruikerservaring, enzovoort.
+**Kwaliteitsborging:** Testplannen helpen bij het waarborgen van de kwaliteit van je game. Ze stellen je in staat om systematisch alle aspecten van het spel te testen, inclusief functionaliteit, prestaties, gebruikerservaring, enzovoort.
 
-Bugs opsporen: Door een gedetailleerd testplan te hebben, kun je potentiële bugs en fouten in je game identificeren voordat deze de gebruikerservaring kunnen beïnvloeden. Dit is cruciaal om een soepele en probleemloze gameplay-ervaring te garanderen.
+**Bugs opsporen:** Door een gedetailleerd testplan te hebben, kun je potentiële bugs en fouten in je game identificeren voordat deze de gebruikerservaring kunnen beïnvloeden. Dit is cruciaal om een soepele en probleemloze gameplay-ervaring te garanderen.
 
-Efficiëntie: Testplannen helpen bij het efficiënt organiseren van testactiviteiten. Ze stellen het ontwikkelteam in staat om te focussen op specifieke gebieden van de game die moeten worden getest, waardoor tijd en middelen worden bespaard.
+**Efficiëntie:** Testplannen helpen bij het efficiënt organiseren van testactiviteiten. Ze stellen het ontwikkelteam in staat om te focussen op specifieke gebieden van de game die moeten worden getest, waardoor tijd en middelen worden bespaard.
 
-Risicobeheer: Als je van tevoren testplannen maakt, kun je mogelijke problemen in de ontwikkeling van de game ontdekken en oplossen. Zo voorkom je verrassingen later in het proces of bij de lancering van de game
+**Risicobeheer:** Als je van tevoren testplannen maakt, kun je mogelijke problemen in de ontwikkeling van de game ontdekken en oplossen. Zo voorkom je verrassingen later in het proces of bij de lancering van de game
 
-Gebruikerservaring verbeteren: Door middel van gestructureerde tests kun je de gebruikerservaring van je game verbeteren. Door te begrijpen hoe gebruikers met verschillende elementen van het spel omgaan, kun je aanpassingen maken om de algehele ervaring te optimaliseren.
+**Gebruikerservaring verbeteren:** Door middel van gestructureerde tests kun je de gebruikerservaring van je game verbeteren. Door te begrijpen hoe gebruikers met verschillende elementen van het spel omgaan, kun je aanpassingen maken om de algehele ervaring te optimaliseren.
 
-Samengevat: testplannen zijn erg belangrijk bij het maken van een game. Ze zorgen ervoor dat de game goed is, risico's worden verkleind en de spelervaring wordt verbeterd.
+**Samengevat:** testplannen zijn erg belangrijk bij het maken van een game. Ze zorgen ervoor dat de game goed is, risico's worden verkleind en de spelervaring wordt verbeterd.
 
-Ik heb geleerd dat het bekijken van instructievideo's van docenten op platforms zoals YouTube kan helpen bij het maken van opdrachten. Dit komt omdat deze video's vaak stapsgewijze uitleg bieden over complexe onderwerpen of taken. Wanneer je vastzit tijdens het maken van een opdracht, kan het raadplegen van deze video's je helpen om de concepten beter te begrijpen en eventuele obstakels te overwinnen.
+- Ik heb geleerd dat het bekijken van instructievideo's van docenten op platforms zoals YouTube kan helpen bij het maken van opdrachten. Dit komt omdat deze video's vaak stapsgewijze uitleg bieden over complexe onderwerpen of taken. Wanneer je vastzit tijdens het maken van een opdracht, kan het raadplegen van deze video's je helpen om de concepten beter te begrijpen en eventuele obstakels te overwinnen.
 
-Ik heb geleerd hoe ik concrete user stories moet opstellen, inclusief het gebruik van acceptatiecriteria, taken en de definitie van 'done'.
+- Ik heb geleerd hoe ik concrete user stories moet opstellen, inclusief het gebruik van acceptatiecriteria, taken en de definitie van 'done'.
 
-Ik heb geleerd dat het efficiënter is om taken kort en bondig te houden, zodat ze sneller afgerond kunnen worden, in plaats van ze te uitgebreid te maken, waardoor er minder vooruitgang wordt geboekt.
+- Ik heb geleerd dat het efficiënter is om taken kort en bondig te houden, zodat ze sneller afgerond kunnen worden, in plaats van ze te uitgebreid te maken, waardoor er minder vooruitgang wordt geboekt.
 
 **Waar heb ik me in deze periode op ontwikkeld?:**
 
