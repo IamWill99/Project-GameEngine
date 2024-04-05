@@ -97,8 +97,7 @@ Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 
 
 
 
-#Retrospective:
-Naam: Mary Anyanwu
+# Retrospective: Mary Anyanwu
 
 
 **Twee adviezen als externe adviseur**
