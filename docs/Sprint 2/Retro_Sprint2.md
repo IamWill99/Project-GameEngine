@@ -97,7 +97,7 @@ Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 
 
 
 
-**Retrospective:
+##**Retrospective:
 Naam: Mary Anyanwu**
 
 
@@ -125,7 +125,7 @@ Risicobeheer: Als je van tevoren testplannen maakt, kun je mogelijke problemen i
 
 Gebruikerservaring verbeteren: Door middel van gestructureerde tests kun je de gebruikerservaring van je game verbeteren. Door te begrijpen hoe gebruikers met verschillende elementen van het spel omgaan, kun je aanpassingen maken om de algehele ervaring te optimaliseren.
 
-Samengevat: zijn testplannen erg belangrijk bij het maken van een game. Ze zorgen ervoor dat de game goed is, risico's worden verkleind en de spelervaring wordt verbeterd.
+Samengevat: testplannen zijn erg belangrijk bij het maken van een game. Ze zorgen ervoor dat de game goed is, risico's worden verkleind en de spelervaring wordt verbeterd.
 
 Ik heb geleerd dat het bekijken van instructievideo's van docenten op platforms zoals YouTube kan helpen bij het maken van opdrachten. Dit komt omdat deze video's vaak stapsgewijze uitleg bieden over complexe onderwerpen of taken. Wanneer je vastzit tijdens het maken van een opdracht, kan het raadplegen van deze video's je helpen om de concepten beter te begrijpen en eventuele obstakels te overwinnen.
 
