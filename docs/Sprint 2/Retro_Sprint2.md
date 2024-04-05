@@ -125,10 +125,11 @@ Ik ga mijn kennis van coderen verder verdiepen om mijn vaardigheden in OOP, Type
 
 Ik lied mijn game testen door klas genoten en vrienden buiten school en door de feedback die ik kreeg kon ik mij game verbeteren
 
-Op basis van het verslag van de team-retrospective, geef het team ten minste twee concrete en praktische adviezen om verbeteringen nog effectiever te laten verlopen:
-Verbeterde documentatie: Zorg ervoor dat we een betere documentatie hebben, zodat informatie gemakkelijk toegankelijk is voor alle teamleden. Dit helpt bij het behouden van consistentie en efficiëntie in ons werk.
+**Op basis van het verslag van de team-retrospective, geef het team ten minste twee concrete en praktische adviezen om verbeteringen nog effectiever te laten verlopen:**
 
-Versterking van teamverband: Laten we meer aandacht besteden aan het ondersteunen van elkaar en het delen van hulpbronnen, zelfs als we allemaal individuele taken hebben. Het is belangrijk dat we ons realiseren dat we als team één geheel zijn en dat we elkaar moeten ondersteunen om onze doelen te bereiken.
+**Verbeterde documentatie:** Zorg ervoor dat we een betere documentatie hebben, zodat informatie gemakkelijk toegankelijk is voor alle teamleden. Dit helpt bij het behouden van consistentie en efficiëntie in ons werk.
+
+**Versterking van teamverband:** Laten we meer aandacht besteden aan het ondersteunen van elkaar en het delen van hulpbronnen, zelfs als we allemaal individuele taken hebben. Het is belangrijk dat we ons realiseren dat we als team één geheel zijn en dat we elkaar moeten ondersteunen om onze doelen te bereiken.
 
 **Wat heb ik geleerd van deze sprint:**
 
