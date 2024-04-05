@@ -90,3 +90,84 @@ Nu kan ik comfortabel de vier aspecten van OOP uitleggen en toepassen in toekoms
 
 Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 had ik mijn User Stories te groot gemaakt en niet genoeg uitgewerkt, waardoor er te veel overbleven voor de volgende sprint. Door advies van de docenten heb ik mijn User Stories verder verdeelt onder kleinere Stories, zodat deze behapbaar zijn en voor het einde van de volgend sprint afgemaakt kunnen worden. Wel heb ik gemerkt bij de burndownchart dat ze altijd aan het einde van de sprint op close worden gezet, dus dit zal een verbeterpunt zijn voor het volgende project.
 
+
+
+
+#Retrospective:
+#Naam: Mary Anyanwu
+
+Retrospectief Verslag
+Sprint 2 Datum: 5 april 2024
+
+Doel: Het doel van dit retrospectieve verslag is om terug te kijken op Sprint 2 van het project en te reflecteren op wat er goed ging, wat er minder goed ging en wat ik heb geleerd.
+
+#Wat ging goed:
+Team Communicatie: Het team had goede communicatie, we hielden elkaar op de hoogte van de voortgang.
+
+Planning: De planning was goed opgesteld en ik heb me er nauwkeurig aan gehouden.
+
+Resultaten: Ik heb mijn doelen voor deze sprint behaald en het eindresultaat was bevredigend.
+
+#Wat ging minder goed:
+Ik had moeite met het code bugs die ik niet kon identificeren in visuele code-editor
+
+Ik had teveel knoppen in mijn game waardoor het verward was voor mensen om mijn game te begrijpen
+
+#Actiepunten:
+Ik zal eerder bij docenten om hulp vragen, aangezien ik te lang bezig was met een fout die ik zelf niet kon oplossen, samen met mijn medeteamgenoten. Uiteindelijk werd het probleem snel opgelost toen de docent ernaar keek.
+
+Ik ga mijn kennis van coderen verder verdiepen om mijn vaardigheden in OOP, TypeScript, enzovoort te verbeteren.
+
+Ik lied mijn game testen door klas genoten en vrienden buiten school en door de feedback die ik kreeg kon ik mij game verbeteren
+
+Op basis van het verslag van de team-retrospective, geef het team ten minste twee concrete en praktische adviezen om verbeteringen nog effectiever te laten verlopen:
+Verbeterde documentatie: Zorg ervoor dat we een betere documentatie hebben, zodat informatie gemakkelijk toegankelijk is voor alle teamleden. Dit helpt bij het behouden van consistentie en efficiëntie in ons werk.
+
+Versterking van teamverband: Laten we meer aandacht besteden aan het ondersteunen van elkaar en het delen van hulpbronnen, zelfs als we allemaal individuele taken hebben. Het is belangrijk dat we ons realiseren dat we als team één geheel zijn en dat we elkaar moeten ondersteunen om onze doelen te bereiken.
+
+#Wat heb ik geleerd van deze sprint:
+
+Het hebben van testplannen voor je game is ontzettend belangrijk om verschillende redenen:
+
+Kwaliteitsborging: Testplannen helpen bij het waarborgen van de kwaliteit van je game. Ze stellen je in staat om systematisch alle aspecten van het spel te testen, inclusief functionaliteit, prestaties, gebruikerservaring, enzovoort.
+
+Bugs opsporen: Door een gedetailleerd testplan te hebben, kun je potentiële bugs en fouten in je game identificeren voordat deze de gebruikerservaring kunnen beïnvloeden. Dit is cruciaal om een soepele en probleemloze gameplay-ervaring te garanderen.
+
+Efficiëntie: Testplannen helpen bij het efficiënt organiseren van testactiviteiten. Ze stellen het ontwikkelteam in staat om te focussen op specifieke gebieden van de game die moeten worden getest, waardoor tijd en middelen worden bespaard.
+
+Risicobeheer: Als je van tevoren testplannen maakt, kun je mogelijke problemen in de ontwikkeling van de game ontdekken en oplossen. Zo voorkom je verrassingen later in het proces of bij de lancering van de game
+
+Gebruikerservaring verbeteren: Door middel van gestructureerde tests kun je de gebruikerservaring van je game verbeteren. Door te begrijpen hoe gebruikers met verschillende elementen van het spel omgaan, kun je aanpassingen maken om de algehele ervaring te optimaliseren.
+
+Samengevat: zijn testplannen erg belangrijk bij het maken van een game. Ze zorgen ervoor dat de game goed is, risico's worden verkleind en de spelervaring wordt verbeterd.
+
+-Ik heb geleerd dat het bekijken van instructievideo's van docenten op platforms zoals YouTube kan helpen bij het maken van opdrachten. Dit komt omdat deze video's vaak stapsgewijze uitleg bieden over complexe onderwerpen of taken. Wanneer je vastzit tijdens het maken van een opdracht, kan het raadplegen van deze video's je helpen om de concepten beter te begrijpen en eventuele obstakels te overwinnen.
+
+-Ik heb geleerd hoe ik concrete user stories moet opstellen, inclusief het gebruik van acceptatiecriteria, taken en de definitie van 'done'.
+
+-Ik heb geleerd dat het efficiënter is om taken kort en bondig te houden, zodat ze sneller afgerond kunnen worden, in plaats van ze te uitgebreid te maken, waardoor er minder vooruitgang wordt geboekt.
+
+#Waar heb ik me in deze periode op ontwikkeld?:
+
+In het begin van deze periode was mijn kennis over objectgeoriënteerd programmeren nog in ontwikkeling.Ik begreep de basisprincipes niet goed, en ik had nog niet echt een diep begrip ervan. Gedurende deze periode heb ik echter enorme vooruitgang gemaakt. Ik heb hard gewerkt, waarbij ik begrippen ben gaan opschrijven, filmpjes heb bekeken en informatie in mijn eigen woorden heb verwerkten veel geleerd, waardoor mijn begrip van objectgeoriënteerd programmeren op een nieuw niveau is gekomen.
+
+Wat echt helpt, is dat ik nu in staat ben om de principes van objectgeoriënteerd programmeren uit te leggen in mijn code. Ik kan het nu aan anderen uitleggen, zelfs met voorbeelden erbij, waardoor het makkelijker te begrijpen is.
+
+Anderen hebben ook gemerkt dat ik vooruitgang heb geboekt. Een expert heeft mijn werk beoordeeld en vond dat ik grote stappen heb gezet in mijn begrip van objectgeoriënteerd programmeren. Ook mijn docent heeft mij aangemoedigd om door te gaan met mijn ontwikkeling op dit gebied, wat mij extra motivatie geeft om door te zetten.
+
+Kortom, ik ben trots op mijn vooruitgang. In het begin was mijn kennis over objectgeoriënteerd programmeren nog in ontwikkeling, maar nu voel ik me veel zelfverzekerder en bekwaam op dit gebied. Ik zal blijven leren en groeien, zodat ik nog meer succes kan behalen in de toekomst.
+
+
+
+#Wie ben ik aan het worden als professional:
+
+Als professional leer ik hoe belangrijk het is om goed te kunnen praten en plannen in een team. Ik wil beter worden in programmeren en meer weten over Lit, OOP, TypeScript en andere technologieën. Ook kan ik steeds beter om feedback vragen en hulp vragen als ik het nodig heb. Dat maakt mijn werk efficiënter. Ik ben blij te kunnen zeggen dat ik vooruitgang boek met OOP.
+
+Waaraan zie ik dat ik me aan het ontwikkelen ben:
+
+Ik zie dat ik beter word in het halen van mijn doelen op tijd. Dat betekent dat ik steeds beter kan plannen en mijn taken goed kan doen. Ook zie ik dat ik steeds handiger wordt in het vinden en oplossen van fouten in mijn code. Dit komt doordat ik meer ervaring krijg en meer leer over programmeren. Als ik fouten maak, leer ik daarvan en probeer ik het de volgende keer beter te doen. Ik vraag ook vaker om hulp en accepteer feedback om mezelf te verbeteren. Ik schrijf nu alle informatie in mijn schrift als ik leer, zodat het begrijpen van code en principes makkelijker wordt voor mij.Samen dragen deze aspecten bij aan mijn professionele groei.
+
+#Conclusie:
+
+In Sprint 2 van ons project verliep de teamcommunicatie goed en behaalden we onze doelen volgens planning. Ik worstelde echter met het identificeren van codebugs en het vereenvoudigen van mijn game-ontwerp. Om dit aan te pakken, zal ik eerder om hulp vragen, mijn programmeervaardigheden verbeteren en feedback actief zoeken. Daarnaast hebben we als team afgesproken om elkaar meer te ondersteunen. Ik heb geleerd over het belang van gedetailleerde testplannen en het gebruik van instructievideo's voor complexe concepten. Als professional zie ik mezelf groeien in het bereiken van doelen, het oplossen van fouten en het vragen om feedback. Kortom, deze sprint heeft me geholpen om mijn sterke punten te identificeren en mijn zwakke punten aan te pakken, waardoor ik me verder kan ontwikkelen.
+
