@@ -2,7 +2,7 @@ Sprintreview Blok 3
  
 Reflectie na projectmarkt 05-04-2024
  
-andaag hebben we deelgenomen aan de projectmarkt met onze game: Nutty Putty Cave. Dit was een leuke ervaring, omdat andere studenten en docenten onze game konden spelen. Bij de presentaties van de vorige blokken lieten we het alleen zien aan de docenten, dus dit zien we als een positieve verandering.
+**Vandaag hebben we deelgenomen aan de projectmarkt met onze game:** Nutty Putty Cave. Dit was een leuke ervaring, omdat andere studenten en docenten onze game konden spelen. Bij de presentaties van de vorige blokken lieten we het alleen zien aan de docenten, dus dit zien we als een positieve verandering.
 Onze game bestaat uit vijf rooms en het doel was om een schat te vinden aan het einde van de grot. Dit was de feedback van beide de studenten en docenten:
 Positieve punten:
 Er zijn meerdere grappige momenten in het spel
@@ -10,12 +10,12 @@ Creatieve raadsels
 Grappige verhaallijn & characters
 Uniform uiterlijk
  
-Verbeter punten:
+**Verbeter punten:**
 In bepaalde levels krijg je te veel tekst te zien, waardoor je moet scrollen om de knoppen te vinden.
 Je kan soms vastlopen, omdat niet elke taak duidelijk is beschreven
 Te vaak moet je op dezelfde knoppen drukken om verder te komen
  
-We zijn het eens met de verbeterpunten, dit is omdat:
+**We zijn het eens met de verbeterpunten, dit is omdat:**
 Op meerdere plekken in onze game nog fine-tuning plaats moest vinden, zoals geen herhalende knoppen en beter begrijpbare tekst.
 We weten waar we aan kunnen werken aan het begin van de volgende blok, zodat deze fouten niet herhaald worden.
 Wij hadden als team meer uren in het project kunnen stoppen.
