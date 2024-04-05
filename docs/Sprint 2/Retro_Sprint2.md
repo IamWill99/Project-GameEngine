@@ -1,5 +1,5 @@
 **Retro sprint 2 blok 3**
-
+Voor deze sprint hebben we de retrospective methode: what is working and what is not working gebruikt. Als u naar het Plaatje hierboven kijkt ziet u in de linker kolom wat goed ging tijdens het werken en in de rechter kolom wat minder goed ging.
 **Reflectie van Eduard Ohanian op Sprint 2 - 5 april 2024**
 
 Na afronding van Sprint 2 ben ik als Eduard Ohanian zeer tevreden met de vooruitgang die ik heb geboekt en de nieuwe vaardigheden die ik heb ontwikkeld. Deze sprint heeft mijn horizon verbreed en mijn zelfvertrouwen als ontwikkelaar versterkt, terwijl het me tegelijkertijd heeft uitgedaagd om mijn grenzen te verleggen en nieuwe terreinen te verkennen.
@@ -45,3 +45,14 @@ De concrete praktische adviezen om dingen die beter kunnen beter te laten verlop
 1: Het eerste waar ik mezelf heb verbeterd in dit blok is het programmeren in typescript. Ik heb erg veel geleerd over de verschillende classes in typescript, en ik heb geleerd hoe ik deze kan toepassen in mijn code. Ook heb ik geleerd om met de game engine te werken en hierin dus een text-based game te maken. Aan het begin van het blok had ik wel een beetje ervaring met typescript omdat ik dit in het vorige blok heb gebruikt. Maar ik wist hier dus nog niet super veel over maar door dit blok heb ik er wel een stuk meer over geleerd. 
 
 2: Als tweede heb ik me ontwikkeld in het samenwerken in een grotere groep. Dit heb ik voor dit blok eigenlijk nog nooit echt gedaan, dus ik wist aan het begin van het blok nog eigenlijk ook niet hoe je dit goed kan doen. Hierover heb ik dit blok dus veel geleerd. 
+
+
+# Individuele reflectie Timor Yuksel: 
+
+Hier zijn twee nieuwe punten die het team zou kunnen overwegen:
+* Verbetering van de documentatie: Het valt op dat de documentatie van  het project mogelijk niet zo uitgebreid of up-to-date is als zou moeten. Dit kan leiden tot verwarring en inefficiëntie bij het werken aan verschillende taken.
+* Bevordering van teambuildingactiviteiten: Hoewel het team effectief samenwerkt aan het project, kan het nuttig zijn om meer nadruk te leggen op het opbouwen van onderlinge relaties en teamspirit. Het organiseren van teambuildingactiviteiten, zowel online als offline, kan helpen om de banden tussen teamleden te versterken en de samenwerking te verbeteren.
+
+## Ontwikkeling tijdens dit blok:
+* Timemanagement: Ik heb geleerd hoe ik mijn tijd beter kan beheren. Dat betekent dat ik heb ontdekt hoe ik mijn taken slim kan plannen en organiseren, zodat ik ze op tijd kan afronden. Dit helpt me om niet gestrest te raken en om mijn werk efficiënter te doen.
+* Luisteren naar feedback: Ik heb geleerd hoe ik beter kan luisteren naar wat anderen te zeggen hebben over mijn werk. Dat betekent dat ik open sta om te horen wat ze goed vinden en wat ik kan verbeteren. Het helpt me om te groeien en mezelf steeds te verbeteren.
