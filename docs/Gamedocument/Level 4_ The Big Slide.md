@@ -1,20 +1,23 @@
 # Korte inhoud
 
-Jij bent een avontuurlijk persoon die op zoek is naar de verborgen geheimen van Nutty Putty Cave. The Big Slide staat bekend als een van de meest fascinerende, maar ook gevaarlijke delen van de grot. Jouw doel is om deze uitdaging te overwinnen en te ontdekken wat er dieper in de duisternis ligt.
+In "The Big Slide", waar je in de grot bent gevallen, bevind jij je diep in een mysterieuze grot, omringd door duisternis en fluisterende echo's van een geest die jou wilt helpen ontsnappen. Jij wordt geconfronteerd met een reeks keuzes: vertrouw je op de geest, zoek je naar bruikbare voorwerpen om te ontsnappen, of blijf je in de grot? Jouw uiteindelijke doel is om de uitdaging te overwinnen en de volgende grot te bereiken door slimme keuzes te maken, voorwerpen te verzamelen en je een weg te vinden door de grot zonder het oplossen van een specifieke puzzel.
 
 # Gameplay/Doelen
 
 **Gameplay**:
 
-Je staat aan de bovenkant van The Big Slide, omringd door de echo's van de grot. Wat wil je doen?
 
-- Onderzoek de omgeving.
-- Klim voorzichtig naar beneden.
-- Zoek naar een alternatieve route.
+De speler bevindt zich aan het begin van The Big Slide, een mysterieuze grot gehuld in duisternis. Om hen heen echoën de fluisteringen van een geest die hen wenst te helpen ontsnappen.
+
+Wat wil je doen
+
+- Neem je de hulp van de geest.
+- Blijf in de grot
 
 **Doel**:
 
-Je doel is om de uitdaging te overwinnen en te ontdekken wat er dieper in de duisternis ligt.
+
+De speler heeft als doel om de uitdaging te overwinnen en naar de volgende grot te komen. Dit vereist het maken van de juiste keuzes, het verzamelen van de benodigde voorwerpen en het navigeren door de grot. Ze moeten slim zijn en goed nadenken over hun beslissingen om te slagen in hun missie om te ontsnappen aan The Big Slide.
 
 # Locatie
 
