@@ -101,35 +101,15 @@ Op het gebied van agile heb ik ook vooruitgang geboekt. In het begin van blok 3 
 Naam: Mary Anyanwu**
 
 
-Retrospectief Verslag
-Sprint 2 Datum: 5 april 2024
+**Twee adviezen als externe adviseur**
 
-Doel: Het doel van dit retrospectieve verslag is om terug te kijken op Sprint 2 van het project en te reflecteren op wat er goed ging, wat er minder goed ging en wat ik heb geleerd.
+Bij het evalueren van het samenwerkingsproces binnen ons team, zijn er bepaalde aspecten die verbeterd kunnen worden om onze doelstellingen beter te bereiken.
+#Allereerst is het van cruciaal belang om onze documentatie te verbeteren:# Door dit te doen, wordt informatie gemakkelijk toegankelijk voor alle teamleden, wat op zijn beurt zal bijdragen aan het handhaven van consistentie en efficiëntie in ons werkproces. Een betere documentatie zorgt ervoor dat we allemaal op dezelfde pagina zijn en dat essentiële informatie niet verloren gaat.
 
-**Wat ging goed:**
-Team Communicatie: Het team had goede communicatie, we hielden elkaar op de hoogte van de voortgang.
+#Een ander punt van verbetering is het versterken van ons teamverband:# We moeten meer nadruk leggen op het ondersteunen van elkaar en het delen van middelen, zelfs als we individuele taken hebben. Het is van cruciaal belang dat we ons realiseren dat we als team één geheel vormen en dat het succes van één teamlid bijdraagt aan het succes van ons allemaal. Door elkaar te ondersteunen en samen te werken, kunnen we onze doelstellingen efficiënter bereiken en een sterker team opbouwen.
 
-Planning: De planning was goed opgesteld en ik heb me er nauwkeurig aan gehouden.
+Een ander belangrijk aspect dat onze aandacht verdient, is het bewuster volgen van elkaars werk. We hebben gemerkt dat tijdens voorgaande periodes ieder van ons vooral gefocust was op de eigen taken, waardoor we wellicht niet goed op de hoogte waren van elkaars voortgang en uitdagingen. Om dit te verbeteren, stel ik voor om regelmatig daily stand-up meetings te houden aan het begin van de dag waarbij we als team samenkomen. Tijdens deze meetings kunnen we onze individuele voortgang bespreken, onze plannen voor de dag delen en eventuele obstakels waar we tegenaan lopen benoemen. Door deze open communicatie te stimuleren, kunnen we beter op elkaar anticiperen en elkaar ondersteunen waar nodig, wat uiteindelijk zal bijdragen aan een efficiënter en meer samenhangend team.
 
-Resultaten: Ik heb mijn doelen voor deze sprint behaald en het eindresultaat was bevredigend.
-
-**Wat ging minder goed:**
-Ik had moeite met het code bugs die ik niet kon identificeren in visuele code-editor
-
-Ik had teveel knoppen in mijn game waardoor het verward was voor mensen om mijn game te begrijpen
-
-**Actiepunten:**
-Ik zal eerder bij docenten om hulp vragen, aangezien ik te lang bezig was met een fout die ik zelf niet kon oplossen, samen met mijn medeteamgenoten. Uiteindelijk werd het probleem snel opgelost toen de docent ernaar keek.
-
-Ik ga mijn kennis van coderen verder verdiepen om mijn vaardigheden in OOP, TypeScript, enzovoort te verbeteren.
-
-Ik lied mijn game testen door klas genoten en vrienden buiten school en door de feedback die ik kreeg kon ik mij game verbeteren
-
-**Op basis van het verslag van de team-retrospective, geef het team ten minste twee concrete en praktische adviezen om verbeteringen nog effectiever te laten verlopen:**
-
-**Verbeterde documentatie:** Zorg ervoor dat we een betere documentatie hebben, zodat informatie gemakkelijk toegankelijk is voor alle teamleden. Dit helpt bij het behouden van consistentie en efficiëntie in ons werk.
-
-**Versterking van teamverband:** Laten we meer aandacht besteden aan het ondersteunen van elkaar en het delen van hulpbronnen, zelfs als we allemaal individuele taken hebben. Het is belangrijk dat we ons realiseren dat we als team één geheel zijn en dat we elkaar moeten ondersteunen om onze doelen te bereiken.
 
 **Wat heb ik geleerd van deze sprint:**
 
@@ -164,10 +144,6 @@ Anderen hebben ook gemerkt dat ik vooruitgang heb geboekt. Een expert heeft mijn
 Kortom, ik ben trots op mijn vooruitgang. In het begin was mijn kennis over objectgeoriënteerd programmeren nog in ontwikkeling, maar nu voel ik me veel zelfverzekerder en bekwaam op dit gebied. Ik zal blijven leren en groeien, zodat ik nog meer succes kan behalen in de toekomst.
 
 
-
-**Wie ben ik aan het worden als professional:**
-
-Als professional leer ik hoe belangrijk het is om goed te kunnen praten en plannen in een team. Ik wil beter worden in programmeren en meer weten over Lit, OOP, TypeScript en andere technologieën. Ook kan ik steeds beter om feedback vragen en hulp vragen als ik het nodig heb. Dat maakt mijn werk efficiënter. Ik ben blij te kunnen zeggen dat ik vooruitgang boek met OOP.
 
 **Waaraan zie ik dat ik me aan het ontwikkelen ben:**
 
