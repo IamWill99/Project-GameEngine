@@ -2,7 +2,7 @@ Sprintreview Blok 3
  
 Reflectie na projectmarkt 05-04-2024
  
-Vandaag hebben we deelgenomen aan de projectmarkt met onze game: Nutty Putty Cave. Dit was een leuke ervaring, omdat andere studenten en docenten onze game konden spelen. Bij de presentaties van de vorige blokken lieten we het alleen zien aan de docenten, dus dit zien we als een positieve verandering.
+andaag hebben we deelgenomen aan de projectmarkt met onze game: Nutty Putty Cave. Dit was een leuke ervaring, omdat andere studenten en docenten onze game konden spelen. Bij de presentaties van de vorige blokken lieten we het alleen zien aan de docenten, dus dit zien we als een positieve verandering.
 Onze game bestaat uit vijf rooms en het doel was om een schat te vinden aan het einde van de grot. Dit was de feedback van beide de studenten en docenten:
 Positieve punten:
 Er zijn meerdere grappige momenten in het spel
@@ -24,8 +24,3 @@ Perspectief: Feedback kan je een ander perspectief bieden dat je misschien niet 
 Groeimindset: Feedback accepteren kan je helpen om te groeien. In plaats van het te zien als kritiek, kun je het bekijken als een kans om beter te worden.
  
 Wij nemen de feedback mee naar het volgende blok en we hopen met de ervaring van afgelopen projecten dit jaar positief af te sluiten.
- 
-heeft contextmenu
-
-
-heeft contextmenu
